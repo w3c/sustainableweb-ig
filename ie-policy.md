@@ -20,6 +20,10 @@ Individuals are welcome to contact the Chairs to initiate a discussion about par
 
 # FAQ
 
+## I don't work for a W3C Member. Can I join the group?
+
+Potentially, yes (per this policy).
+
 ## I work for a W3C Member. Can I join as an Invited Expert?
 
 No. Individuals who work for a W3C Member organization participate as representatives of their organization and not via the Invited Expert program.

@@ -34,4 +34,4 @@ No. There are no patent licensing obligations associated with participation in a
 
 ## Can I subscribe to the mailing list even if I am not a participant?
 
-Yes. Anyone may [subscribe to the group’s mailing list](mailto:public-sustainability-request@w3.org?subject=subscribe). People join the group are automatically subscribed.
+Yes. Anyone may [subscribe to the group’s mailing list](mailto:public-sustainability-request@w3.org?subject=subscribe). (People who join the group are automatically subscribed.)

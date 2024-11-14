@@ -8,4 +8,5 @@ Repo for the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/s
 
 ## See also
 
+* [Web Sustainability Guidelines (WSG)](https://github.com/w3c/sustainableweb-wsg) GitHub Repository.
 * [Sustainable Web Design Community Group](https://www.w3.org/community/sustyweb/), the precursor to this Interest Group.

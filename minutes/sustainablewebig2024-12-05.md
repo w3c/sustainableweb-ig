@@ -1,4 +1,5 @@
 # Sustainable Web IG Minutes 2024-12-05
+## Agenda https://github.com/w3c/sustainableweb-ig/issues/11
 ## Introductions & [Code of Conduct](https://www.w3.org/policies/code-of-conduct/ "Code of Conduct")
 Alex Dawson gave a quick overview of the work that happened so far
 Tim Frick: if you want to get involved, bookmark the links shared incl the [GitHub page](https://github.com/w3c/sustainableweb-ig/ "Github") and #sustainability in the W3C Slack. If you want to get involved as someone who works for a W3C member, you can join, if not, you can join as an Invited Expert (there’s a bit of process and we expect some commitment).

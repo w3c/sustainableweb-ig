@@ -69,7 +69,7 @@ Examples of this may include:
 
 #### Meetings
 
-Typically, participation in Face-to-face meetings and telephone conferences relating to the Interest Group is open just to W3C Members and Invited Experts. IG members can get details of meetings taking place through [this calendar](https://www.w3.org/groups/ig/sustainableweb/calendar/) and by examining our [meeting agenda](https://github.com/w3c/sustainableweb-ig/issues?q=label%3Aagenda+).
+Typically, participation in Face-to-face meetings and telephone conferences relating to the Interest Group is open just to W3C Members and Invited Experts. IG members can get details of meetings taking place through [this calendar](https://www.w3.org/groups/ig/sustainableweb/calendar/) and by examining our [meeting agenda](https://github.com/w3c/sustainableweb-ig/issues?q=label%3Aagenda+), also available in [Google Docs](https://docs.google.com/document/d/1mDp2Ao_FaurV4GCVkoYFz2NtgYhmeRAjYLKvqMAIEbk/edit?usp=sharing).
 
 We use **Zoom** for meetings, and some people may use video. We also record meetings for those unable to attend. Please consider this if choosing to participate in our events.
 

@@ -7,7 +7,7 @@
 
 The below is **required** to be included, and customized for every page so the buttons work:
 
-```
+```html
 <table class="pageButtons">
 	<tr>
 		<td><a class="previousPage" href="">Previous page<br>None</a></td>
@@ -19,7 +19,7 @@ The below is **required** to be included, and customized for every page so the b
 
 ## CSS
 
-```
+```css
 .hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 .show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; }
 .pageButtons { margin-top: 2em; }
@@ -33,7 +33,7 @@ The below is **required** to be included, and customized for every page so the b
 
 The below must be included within the `<head>` element:
 
-```
+```javascript
 <script class="remove">
 	function addMultipage() {
 	window.addEventListener('hashchange', onHashChange);

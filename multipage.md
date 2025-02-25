@@ -46,9 +46,7 @@ The below must be included within the `<head>` element:
 }
 // Does an added check for initialization (needed for HTML exports)
 window.addEventListener("load", (event) => {
-	window.addEventListener('hashchange', onHashChange);
-	window.addEventListener('click', toc);
-	onHashChange(); toc(); });
+	addMultipage(); });
 function hashSection(hash) {
 	// Grabs the ID's from every element requested
 	let arrayGrab = Array.from(document.querySelectorAll(hash));
@@ -141,16 +139,6 @@ function buttons(id) {
 	// Adds the buttons where they are required
 	var d = document.querySelector('#' + id + ' table');
 	d.parentNode.appendChild(d); }
-function toc() {
-	// Resolves ReSpec quirk where inline TOC appears in random locations on handheld multi-page
-	// New default behavior hides inline TOC (avoiding repeat-content scrolling on multi-page)
-	// Note: TOC can (as always) be accessed via the side panel on handheld devices
-	let classes = document.body.classList
-	if(classes.contains("toc-inline")){
-		document.getElementById("toc").classList.add('hide'); }
-	if(classes.contains("toc-sidebar")){
-		document.getElementById("toc").classList.remove('hide');
-		document.getElementById("toc").classList.add('show'); } }
 </script>
 ```
 **Note:** Code comments can be removed and section names should be configured to match your specification TOC.

@@ -127,14 +127,14 @@ function heading(hash, string) {
 				document.getElementById(value).classList.add('hide'); } } }
 	location.hash = "#" + current; }
 function header() {
-	// This ensures the abstract and sotd content exists if no fragment is visible
 	document.getElementById("abstract").classList.remove('hide');
 	document.getElementById("sotd").classList.remove('hide');
 	document.getElementById("abstract").classList.add('show');
 	document.getElementById("sotd").classList.add('show');
 	buttons("sotd");
-	document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-	document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+	if (window.location.hash != "#full-page") {
+		document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
 function buttons(id) {
 	// Adds the buttons where they are required
 	var d = document.querySelector('#' + id + ' table');

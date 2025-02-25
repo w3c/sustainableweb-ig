@@ -152,6 +152,6 @@ function toc() {
 
 The below must be included in the `respecConfig` section:
 
-```
+```javascript
 var respecConfig = { postProcess: [addMultipage] }
 ```

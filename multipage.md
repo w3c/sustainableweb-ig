@@ -42,8 +42,7 @@ The below must be included within the `<head>` element:
 <script class="remove">
 	function addMultipage() {
 	window.addEventListener('hashchange', onHashChange);
-	onHashChange()
-}
+	onHashChange() }
 // Does an added check for initialization (needed for HTML exports)
 window.addEventListener("load", (event) => {
 	addMultipage(); });

@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.1.0
+- **Version:** 0.1.4
 - **Creator:** Alexander Dawson
 
 ## HTML
@@ -22,6 +22,7 @@ The below is **required** to be included, and customized for every page so the b
 The below must be included within the `<head>` element:
 
 ```css
+@media print { #toc { display: none !important; } }
 @media (scripting: enabled) {
 	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 	.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
@@ -30,6 +31,7 @@ The below must be included within the `<head>` element:
 .pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 .previousPage { justify-content: left; } .fullPage { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 @media (scripting: none) {
+	@media print { #toc { display: block !important; } }
 	.pageButtons { display: none;}
 	.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 ```
@@ -66,6 +68,8 @@ function onHashChange() {
 	let credits = hashSection('#acknowledgments section');
 	let refs = hashSection('#references section');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
+	// Ensures the TOC is only shown to printers when the initial page is loaded
+	if (document.body.classList.contains('full-page')) { document.body.classList.remove('full-page'); }
 	// If current hash or full-page matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
 	if (window.location.hash) {
@@ -88,7 +92,9 @@ function onHashChange() {
 					</tr>
 				</table>`; } }
 			// This ensures the buttons don't appear for full-page mode
+			// It also shows the TOC to printers on the initial page
 			if (current == "full-page") {
+			document.body.classList.add("full-page");
 				for (const value of sections) {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }
@@ -126,6 +132,7 @@ function heading(hash, string) {
 				document.getElementById(value).classList.add('hide'); } } }
 	location.hash = "#" + current; }
 function header() {
+	// This ensures the abstract and sotd content exists if no fragment is visible
 	document.getElementById("abstract").classList.remove('hide');
 	document.getElementById("sotd").classList.remove('hide');
 	document.getElementById("abstract").classList.add('show');

@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.1.6
+- **Version:** 0.1.7
 - **Creator:** Alexander Dawson
 
 ## HTML
@@ -81,9 +81,9 @@ function onHashChange() {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }}
 			if (current == "abstract" || current == "sotd") { header(); }
-			if (current == "references") {
 				// Adds buttons to references as ReSpec auto-generated this section
-				if (document.getElementById('references').querySelector('.pageButtons') == null) {
+			for (const value of refs) {
+				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
 					<tr>
 						<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
@@ -120,9 +120,8 @@ function onHashChange() {
 			document.getElementById(value).classList.add('hide'); }
 		header()
 		// Scrolls to the correct section of the page once its rendered it
-		if (window.location.hash){
-			if (window.location.hash !="#full-page") {
-				document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
+		if (window.location.hash && window.location.hash !="#full-page"){
+							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } }
 function heading(hash, string) {
 	// This function examines headings for things needing to be hidden or made visible
 	// It also ensures jump-to-location works as expected with content being shuffled

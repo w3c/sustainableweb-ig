@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.1.7
+- **Version:** 0.1.8
 - **Creator:** Alexander Dawson
 
 ## HTML
@@ -73,40 +73,41 @@ function onHashChange() {
 	// If current hash or full-page matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
 	if (window.location.hash) {
-		if (sections.includes(current) || "full-page") {
-			for (const value of sections) {
-				// This makes the content visible
-				if ( value != current ) {
-					document.getElementById(value).classList.add('hide'); } else {
-					document.getElementById(value).classList.remove('hide');
-					document.getElementById(value).classList.add('show'); }}
-			if (current == "abstract" || current == "sotd") { header(); }
-				// Adds buttons to references as ReSpec auto-generated this section
-			for (const value of refs) {
-				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
-					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
-					<tr>
-						<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
-						<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
-						<td></td>
-					</tr>
-				</table>`; } }
-			// This ensures the buttons don't appear for full-page mode
-			// It also shows the TOC to printers on the initial page
-			if (current == "full-page") {
-			document.body.classList.add("full-page");
+		for (const value of sections) {
+			if (value == current || "full-page") {
 				for (const value of sections) {
-					document.getElementById(value).classList.remove('hide');
-					document.getElementById(value).classList.add('show'); }
-					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
-			window.scrollTo(0, 0); } else {
-					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
-			// If no hash is visible, show at least something on the screen
-			let check = false;
-			for (const value of all) {
-				if (current == value && check == false ) { check = true; } }
-			if (check == false) { header() } }
+					// This makes the content visible
+					if ( value != current ) {
+						document.getElementById(value).classList.add('hide'); } else {
+						document.getElementById(value).classList.remove('hide');
+						document.getElementById(value).classList.add('show'); }}
+				if (current == "abstract" || current == "sotd") { header(); }
+					// Adds buttons to references as ReSpec auto-generated this section
+				for (const value of refs) {
+					if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
+						document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
+						<tr>
+							<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
+							<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+							<td></td>
+						</tr>
+					</table>`; } }
+				// This ensures the buttons don't appear for full-page mode
+				// It also shows the TOC to printers on the initial page
+				if (current == "full-page") {
+				document.body.classList.add("full-page");
+					for (const value of sections) {
+						document.getElementById(value).classList.remove('hide');
+						document.getElementById(value).classList.add('show'); }
+						document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
+				window.scrollTo(0, 0); } else {
+						document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+						document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+				// If no hash is visible, show at least something on the screen
+				let check = false;
+				for (const value of all) {
+					if (current == value && check == false ) { check = true; } }
+				if (check == false) { header() } } }
 		// Assign your headings here to do the above for more than just the main sections
 		heading(introduction,"introduction");
 		heading(ux,"user-experience-design");

@@ -142,7 +142,7 @@ function header() {
 	document.getElementById("sotd").classList.remove('hide');
 	document.getElementById("abstract").classList.add('show');
 	document.getElementById("sotd").classList.add('show');
-	buttons("sotd");
+	buttons("sotd"); window.scrollTo(0, 0); 
 	if (window.location.hash != "#full-page") {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }

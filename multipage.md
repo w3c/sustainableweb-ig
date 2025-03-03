@@ -121,8 +121,9 @@ function onHashChange() {
 			document.getElementById(value).classList.add('hide'); }
 		header()
 		// Scrolls to the correct section of the page once its rendered it
-		if (window.location.hash && window.location.hash !="#full-page"){
-			document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } }
+		for (const value of all) {
+			if (window.location.hash && window.location.hash !="#full-page" && value == current){
+				document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
 function heading(hash, string) {
 	// This function examines headings for things needing to be hidden or made visible
 	// It also ensures jump-to-location works as expected with content being shuffled

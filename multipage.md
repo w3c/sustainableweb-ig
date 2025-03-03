@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.1.8
+- **Version:** 0.1.9
 - **Creator:** Alexander Dawson
 
 ## HTML
@@ -119,7 +119,7 @@ function onHashChange() {
 		heading(refs,"references"); } else {
 		for (const value of sections) {
 			document.getElementById(value).classList.add('hide'); }
-		header()
+		setTimeout(header, 1);
 		// Scrolls to the correct section of the page once its rendered it
 		for (const value of all) {
 			if (window.location.hash && window.location.hash !="#full-page" && value == current){

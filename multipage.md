@@ -7,11 +7,11 @@
 
 - It supports both ReSpec generation mode and HTML Exports.
 - Uses Vanilla JavaScript with no dependencies (lightweight).
-- Progressively enhances (no JavaScript it'll just show the full-page version).
+- Progressively enhances (no JavaScript it'll just show the full-document version).
 - Uses anchor fragments (it can work offline) and is low maintenance.
 - If no fragment exists or an invalid fragment is used it'll point to the first page.
 - If the fragment exists it'll show the correct page and jump to the section.
-- Supports printing that page (or the full page in that mode).
+- Supports printing that page (or the full document if in that mode).
 - Works across desktop and handheld browsers (good compatibility).
 
 ## HTML
@@ -22,7 +22,7 @@ The below is **required** to be included, and customized for every page so the b
 <table class="pageButtons">
 	<tr>
 		<td><a class="previousPage" href="">Previous page<br>None</a></td>
-		<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+		<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 		<td><a class="nextPage" href="">Next page<br>None</a></td>
 	</tr>
 </table>
@@ -40,7 +40,7 @@ The below must be included within the `<head>` element:
 .pageButtons { margin-top: 2em; }
 .pageButtons, .pageButtons tr, .pageButtons tbody, .pageButtons td { display: flex; flex: 1; gap: 10px; }
 .pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
-.previousPage { justify-content: left; } .fullPage { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
+.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 @media (scripting: none) {
 	@media print { #toc { display: block !important; } }
 	.pageButtons { display: none;}
@@ -80,12 +80,12 @@ function onHashChange() {
 	let refs = hashSection('#references section');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
-	if (document.body.classList.contains('full-page')) { document.body.classList.remove('full-page'); }
-	// If current hash or full-page matches, visibility is assured & buttons appear
+	if (document.body.classList.contains('full-document')) { document.body.classList.remove('full-document'); }
+	// If current hash or full-document matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
 	if (window.location.hash) {
 		for (const value of sections) {
-			if (value == current || "full-page") {
+			if (value == current || "full-document") {
 				for (const value of sections) {
 					// This makes the content visible
 					if ( value != current ) {
@@ -99,14 +99,14 @@ function onHashChange() {
 						document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
 						<tr>
 							<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
-							<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+							<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 							<td></td>
 						</tr>
 					</table>`; } }
-				// This ensures the buttons don't appear for full-page mode
+				// This ensures the buttons don't appear for full-document mode
 				// It also shows the TOC to printers on the initial page
-				if (current == "full-page") {
-				document.body.classList.add("full-page");
+				if (current == "full-document") {
+				document.body.classList.add("full-document");
 					for (const value of sections) {
 						document.getElementById(value).classList.remove('hide');
 						document.getElementById(value).classList.add('show'); }
@@ -133,7 +133,7 @@ function onHashChange() {
 		header();
 		// Scrolls to the correct section of the page once its rendered it
 		for (const value of all) {
-			if (window.location.hash && window.location.hash !="#full-page" && value == current){
+			if (window.location.hash && window.location.hash !="#full-document" && value == current){
 				document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
 function heading(hash, string) {
 	// This function examines headings for things needing to be hidden or made visible
@@ -154,7 +154,7 @@ function header() {
 	document.getElementById("abstract").classList.add('show');
 	document.getElementById("sotd").classList.add('show');
 	buttons("sotd"); window.scrollTo(0, 0); 
-	if (window.location.hash != "#full-page") {
+	if (window.location.hash != "#full-document") {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
 function buttons(id) {

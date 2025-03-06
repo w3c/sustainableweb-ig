@@ -3,6 +3,17 @@
 - **Version:** 0.1.9
 - **Creator:** Alexander Dawson
 
+## Features
+
+- It supports both ReSpec generation mode and HTML Exports.
+- Uses Vanilla JavaScript with no dependencies (lightweight).
+- Progressively enhances (no JavaScript it'll just show the full-page version).
+- Uses anchor fragments (it can work offline) and is low maintenance.
+- If no fragment exists or an invalid fragment is used it'll point to the first page.
+- If the fragment exists it'll show the correct page and jump to the section.
+- Supports printing that page (or the full page in that mode).
+- Works across desktop and handheld browsers (good compatibility).
+
 ## HTML
 
 The below is **required** to be included, and customized for every page so the buttons work:

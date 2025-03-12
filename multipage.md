@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.1.9
+- **Version:** 0.2.0
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -20,7 +20,7 @@ The below is **required** to be included, and customized for every page so the b
 
 ```html
 <ol class="pageButtons">
-	<li><a class="previousPage" href="">Previous page<br>None</a></li
+	<li><a class="previousPage" href="">Previous page<br>None</a></li>
 	<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 	<li><a class="nextPage" href="">Next page<br>None</a></li>
 </ol>
@@ -35,12 +35,10 @@ The below must be included within the `<head>` element:
 @media (scripting: enabled) {
 	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 	.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
-.pageButtons { display: flex; gap: 10px; margin: 2em 0 0; padding: 0; }
-.pageButtons > li { flex: 1; list-style: none; margin: 0; display: flex; }
-.pageButtons > li > a { flex: 1; }
-.pageButtons a { border: medium solid #d9d9d9; background-color: #F3F3F3; font-weight: bold; display: block; padding: 0.5em 1em; }
-.pageButtons .nextPage { text-align: right; }
-.pageButtons .fullDocument { display: flex; align-items: center; justify-content: center; }
+.pageButtons { margin-top: 2em; }
+.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
+.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
+.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 @media (scripting: none) {
 	@media print { #toc { display: block !important; } }
 	.pageButtons { display: none;}
@@ -96,13 +94,11 @@ function onHashChange() {
 					// Adds buttons to references as ReSpec auto-generated this section
 				for (const value of refs) {
 					if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
-						document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
-						<tr>
-							<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
-							<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
-							<td></td>
-						</tr>
-					</table>`; } }
+						document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
+						<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+						<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+						<li></li>
+					</ol>`; } }
 				// This ensures the buttons don't appear for full-document mode
 				// It also shows the TOC to printers on the initial page
 				if (current == "full-document") {
@@ -159,7 +155,7 @@ function header() {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
 function buttons(id) {
 	// Adds the buttons where they are required
-	var d = document.querySelector('#' + id + ' table');
+	var d = document.querySelector('#' + id + ' li');
 	d.parentNode.appendChild(d); }
 </script>
 ```

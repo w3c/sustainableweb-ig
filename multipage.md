@@ -155,7 +155,7 @@ function header() {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
 function buttons(id) {
 	// Adds the buttons where they are required
-	var d = document.querySelector('#' + id + ' li');
+	var d = document.querySelector('#' + id + ' ol');
 	d.parentNode.appendChild(d); }
 </script>
 ```

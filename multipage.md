@@ -19,13 +19,11 @@
 The below is **required** to be included, and customized for every page so the buttons work:
 
 ```html
-<table class="pageButtons">
-	<tr>
-		<td><a class="previousPage" href="">Previous page<br>None</a></td>
-		<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
-		<td><a class="nextPage" href="">Next page<br>None</a></td>
-	</tr>
-</table>
+<ol class="pageButtons">
+	<li><a class="previousPage" href="">Previous page<br>None</a></li
+	<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+	<li><a class="nextPage" href="">Next page<br>None</a></li>
+</ol>
 ```
 
 ## CSS
@@ -37,10 +35,12 @@ The below must be included within the `<head>` element:
 @media (scripting: enabled) {
 	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 	.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
-.pageButtons { margin-top: 2em; }
-.pageButtons, .pageButtons tr, .pageButtons tbody, .pageButtons td { display: flex; flex: 1; gap: 10px; }
-.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
-.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
+.pageButtons { display: flex; gap: 10px; margin: 2em 0 0; padding: 0; }
+.pageButtons > li { flex: 1; list-style: none; margin: 0; display: flex; }
+.pageButtons > li > a { flex: 1; }
+.pageButtons a { border: medium solid #d9d9d9; background-color: #F3F3F3; font-weight: bold; display: block; padding: 0.5em 1em; }
+.pageButtons .nextPage { text-align: right; }
+.pageButtons .fullDocument { display: flex; align-items: center; justify-content: center; }
 @media (scripting: none) {
 	@media print { #toc { display: block !important; } }
 	.pageButtons { display: none;}

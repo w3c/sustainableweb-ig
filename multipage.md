@@ -53,7 +53,7 @@ The below must be included within the `<head>` element:
 <script class="remove">
 	function addMultipage() {
 	window.addEventListener('hashchange', onHashChange);
-	onHashChange() }
+	onHashChange(); }
 // Does an added check for initialization (needed for HTML exports)
 window.addEventListener("load", (event) => {
 	addMultipage(); });
@@ -91,7 +91,7 @@ function onHashChange() {
 						document.getElementById(value).classList.remove('hide');
 						document.getElementById(value).classList.add('show'); }}
 				if (current == "abstract" || current == "sotd") { header(); }
-					// Adds buttons to references as ReSpec auto-generated this section
+				// Adds buttons to references as ReSpec auto-generated this section
 				for (const value of refs) {
 					if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 						document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">

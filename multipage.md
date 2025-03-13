@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.0
+- **Version:** 0.2.1
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -73,7 +73,7 @@ function onHashChange() {
 	let webdev = hashSection('#web-development *');
 	let infra = hashSection('#hosting-infrastructure-and-systems *');
 	let biz = hashSection('#business-strategy-and-product-management *');
-	let glossary = hashSection('#glossary');
+	let glossary = hashSection('#glossary *');
 	let credits = hashSection('#acknowledgments section');
 	let refs = hashSection('#references section');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);

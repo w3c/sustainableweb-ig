@@ -1,6 +1,6 @@
 # Invited Expert Policy for the Sustainable Web Interest Group
 
-Status: This is a draft that has been reviewed by the IG Chairs.
+Status: This has been reviewed by the IG Chairs.
 
 # Policy
 

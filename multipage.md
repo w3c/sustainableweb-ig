@@ -50,7 +50,7 @@ The below must be included within the `<head>` element:
 The below must be included within the `<head>` element:
 
 ```javascript
-<script class="remove">
+<script>
 	function addMultipage() {
 	window.addEventListener('hashchange', onHashChange);
 	onHashChange(); }

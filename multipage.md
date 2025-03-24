@@ -82,7 +82,7 @@ function onHashChange() {
 		document.body.classList.remove('full-document'); }
 	// If current hash or full-document matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
-	if (window.location.hash) {
+	if (current) {
 		for (const value of sections) {
 			for (const value of sections) {
 				// This makes the content visible

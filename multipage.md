@@ -33,7 +33,7 @@ The below must be included within the `<head>` element:
 ```css
 @media print { #toc { display: none !important; } }
 @media (scripting: enabled) {
-	.hide { display: block !important; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.hide { display: inherit !important; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 	.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 .pageButtons { margin-top: 2em; }
 .pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
@@ -141,9 +141,9 @@ function heading(hash, string) {
 			if (value == string) {
 				document.getElementById(value).classList.remove('hide');
 				document.getElementById(value).classList.add('show'); } else {
+				document.getElementById(value).classList.remove('show');
 				document.getElementById(value).classList.add('hide'); } } }
 	location.hash = "#" + current; }
-function header() {
 	// This ensures the abstract and sotd content exists if no fragment is visible
 	document.getElementById("abstract").classList.remove('hide');
 	document.getElementById("sotd").classList.remove('hide');

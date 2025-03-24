@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.3
+- **Version:** 0.2.4
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -87,6 +87,7 @@ function onHashChange() {
 			for (const value of sections) {
 				// This makes the content visible
 				if ( value != current ) {
+					document.getElementById(value).classList.remove('show');
 					document.getElementById(value).classList.add('hide'); } else {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }}

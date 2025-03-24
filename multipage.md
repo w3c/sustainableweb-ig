@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.1
+- **Version:** 0.2.2
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -78,12 +78,13 @@ function onHashChange() {
 	let refs = hashSection('#references section');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
-	if (document.body.classList.contains('full-document')) { document.body.classList.remove('full-document'); }
+	if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
+		document.body.classList.remove('full-document'); }
 	// If current hash or full-document matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
 	if (window.location.hash) {
 		for (const value of sections) {
-			if (value == current || "full-document") {
+			if (value == current || window.location.hash == "#full-document") {
 				for (const value of sections) {
 					// This makes the content visible
 					if ( value != current ) {
@@ -101,7 +102,7 @@ function onHashChange() {
 					</ol>`; } }
 				// This ensures the buttons don't appear for full-document mode
 				// It also shows the TOC to printers on the initial page
-				if (current == "full-document") {
+				if (current == "full-document" || window.location.href.includes('pr-preview')) {
 				document.body.classList.add("full-document");
 					for (const value of sections) {
 						document.getElementById(value).classList.remove('hide');

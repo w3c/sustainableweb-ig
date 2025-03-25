@@ -5,7 +5,7 @@
 
 ## Features
 
-- It supports both ReSpec generation mode and HTML Exports.
+- It supports ReSpec generation mode, HTML Exports, and PR Preview.
 - Uses Vanilla JavaScript with no dependencies (lightweight).
 - Progressively enhances (no JavaScript it'll just show the full-document version).
 - Uses anchor fragments (it can work offline) and is low maintenance.
@@ -51,10 +51,13 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	function addMultipage() {
-	window.addEventListener('hashchange', onHashChange);
-	onHashChange(); }
-// Does an added check for initialization (needed for HTML exports)
+// Excludes multiPage functionality for PR Preview (to allow DIFFing next / previous)
+function addMultipage() {
+	if (window.location.href.includes('pr-preview')) {
+		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide')); } else {
+		window.addEventListener('hashchange', onHashChange);
+		onHashChange(); } }
+// Does an added check for initialization (needed for HTML exports and PR Preview)
 window.addEventListener("load", (event) => {
 	if (window.location.href.includes('pr-preview')) {
 		document.body.querySelectorAll('details')
@@ -82,7 +85,7 @@ function onHashChange() {
 	let refs = hashSection('#references section');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
-	if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
+	if (document.body.classList.contains('full-document')) {
 		document.body.classList.remove('full-document'); }
 	// If current hash or full-document matches, visibility is assured & buttons appear
 	// Otherwise content and buttons disappear until requested for that section
@@ -106,7 +109,7 @@ function onHashChange() {
 				</ol>`; } }
 			// This ensures the buttons don't appear for full-document mode
 			// It also shows the TOC to printers on the initial page
-			if (current == "full-document" || window.location.href.includes('pr-preview')) {
+			if (current == "full-document") {
 			document.body.classList.add("full-document");
 				for (const value of sections) {
 					document.getElementById(value).classList.remove('hide');
@@ -129,11 +132,10 @@ function onHashChange() {
 		heading(glossary,"glossary");
 		heading(credits,"acknowledgments");
 		heading(refs,"references"); } else {
-		if (window.location.href.includes('pr-preview')) {} else {
-			for (const value of sections) {
-				document.getElementById(value).classList.remove('show');
-				document.getElementById(value).classList.add('hide'); } }
-			header(); }
+		for (const value of sections) {
+			document.getElementById(value).classList.remove('show');
+			document.getElementById(value).classList.add('hide'); }
+		header(); }
 		// Scrolls to the correct section of the page once its rendered it
 		for (const value of all) {
 			if (window.location.hash && window.location.hash !="#full-document" && value == current){

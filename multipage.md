@@ -126,6 +126,7 @@ function onHashChange() {
 		heading(credits,"acknowledgments");
 		heading(refs,"references"); } else {
 		for (const value of sections) {
+			document.getElementById(value).classList.remove('show');
 			document.getElementById(value).classList.add('hide'); }
 		header();
 		// Scrolls to the correct section of the page once its rendered it

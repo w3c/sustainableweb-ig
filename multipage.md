@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.4
+- **Version:** 0.2.5
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -56,6 +56,10 @@ The below must be included within the `<head>` element:
 	onHashChange(); }
 // Does an added check for initialization (needed for HTML exports)
 window.addEventListener("load", (event) => {
+	if (window.location.href.includes('pr-preview')) {
+		document.body.querySelectorAll('details')
+		.forEach((e) => {(e.hasAttribute('open')) ?
+			e.removeAttribute('open') : e.setAttribute('open',true); }) }
 	addMultipage(); });
 function hashSection(hash) {
 	// Grabs the ID's from every element requested
@@ -125,10 +129,11 @@ function onHashChange() {
 		heading(glossary,"glossary");
 		heading(credits,"acknowledgments");
 		heading(refs,"references"); } else {
-		for (const value of sections) {
-			document.getElementById(value).classList.remove('show');
-			document.getElementById(value).classList.add('hide'); }
-		header();
+		if (window.location.href.includes('pr-preview')) {} else {
+			for (const value of sections) {
+				document.getElementById(value).classList.remove('show');
+				document.getElementById(value).classList.add('hide'); } }
+			header(); }
 		// Scrolls to the correct section of the page once its rendered it
 		for (const value of all) {
 			if (window.location.hash && window.location.hash !="#full-document" && value == current){

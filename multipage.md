@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.5
+- **Version:** 0.2.6
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -53,13 +53,14 @@ The below must be included within the `<head>` element:
 <script>
 // Excludes multiPage functionality for PR Preview (to allow DIFFing next / previous)
 function addMultipage() {
-	if (window.location.href.includes('pr-preview')) {
+	let truthy = window.location.href.includes('pr-preview');
+	if (truthy = true) {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide')); } else {
 		window.addEventListener('hashchange', onHashChange);
 		onHashChange(); } }
-// Does an added check for initialization (needed for HTML exports and PR Preview)
 window.addEventListener("load", (event) => {
-	if (window.location.href.includes('pr-preview')) {
+	let truthy = window.location.href.includes('pr-preview');
+	if (truthy = true) {
 		document.body.querySelectorAll('details')
 		.forEach((e) => {(e.hasAttribute('open')) ?
 			e.removeAttribute('open') : e.setAttribute('open',true); }) }

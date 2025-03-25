@@ -51,19 +51,10 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-// Excludes multiPage functionality for PR Preview (to allow DIFFing next / previous)
 function addMultipage() {
-	let truthy = window.location.href.includes('pr-preview');
-	if (truthy = true) {
-		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide')); } else {
-		window.addEventListener('hashchange', onHashChange);
-		onHashChange(); } }
+	window.addEventListener('hashchange', onHashChange);
+	onHashChange(); }
 window.addEventListener("load", (event) => {
-	let truthy = window.location.href.includes('pr-preview');
-	if (truthy = true) {
-		document.body.querySelectorAll('details')
-		.forEach((e) => {(e.hasAttribute('open')) ?
-			e.removeAttribute('open') : e.setAttribute('open',true); }) }
 	addMultipage(); });
 function hashSection(hash) {
 	// Grabs the ID's from every element requested

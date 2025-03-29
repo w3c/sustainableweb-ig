@@ -95,14 +95,14 @@ function onHashChange() {
 			for (const value of refs) {
 				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-					<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
-					<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
-					<li></li>
-				</ol>`; } }
+						<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+						<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+						<li></li>
+					</ol>`; } }
 			// This ensures the buttons don't appear for full-document mode
 			// It also shows the TOC to printers on the initial page
 			if (current == "full-document") {
-			document.body.classList.add("full-document");
+				document.body.classList.add("full-document");
 				for (const value of sections) {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }

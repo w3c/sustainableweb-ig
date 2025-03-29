@@ -95,14 +95,14 @@ function onHashChange() {
 			for (const value of refs) {
 				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-					<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
-					<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
-					<li></li>
-				</ol>`; } }
+						<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+						<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+						<li></li>
+					</ol>`; } }
 			// This ensures the buttons don't appear for full-document mode
 			// It also shows the TOC to printers on the initial page
 			if (current == "full-document") {
-			document.body.classList.add("full-document");
+				document.body.classList.add("full-document");
 				for (const value of sections) {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }
@@ -146,11 +146,12 @@ function heading(hash, string) {
 				document.getElementById(value).classList.add('hide'); } } }
 	location.hash = "#" + current; }
 	// This ensures the abstract and sotd content exists if no fragment is visible
+function header() {
 	document.getElementById("abstract").classList.remove('hide');
 	document.getElementById("sotd").classList.remove('hide');
 	document.getElementById("abstract").classList.add('show');
 	document.getElementById("sotd").classList.add('show');
-	buttons("sotd"); window.scrollTo(0, 0); 
+	buttons("sotd"); window.scrollTo(0, 0);
 	if (window.location.hash != "#full-document") {
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 		document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }

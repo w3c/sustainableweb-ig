@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.6
+- **Version:** 0.2.7
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -74,8 +74,9 @@ function onHashChange() {
 	let biz = hashSection('#business-strategy-and-product-management *');
 	let glossary = hashSection('#glossary *');
 	let credits = hashSection('#acknowledgments section');
+	let changelog = hashSection('#changelog section');
 	let refs = hashSection('#references section');
-	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
+	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary, credits, changelog, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
 	if (document.body.classList.contains('full-document')) {
 		document.body.classList.remove('full-document'); }
@@ -95,7 +96,7 @@ function onHashChange() {
 			for (const value of refs) {
 				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-						<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+						<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
 						<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 						<li></li>
 					</ol>`; } }
@@ -123,6 +124,7 @@ function onHashChange() {
 		heading(biz,"business-strategy-and-product-management");
 		heading(glossary,"glossary");
 		heading(credits,"acknowledgments");
+		heading(changelog,"changelog");
 		heading(refs,"references"); } else {
 		for (const value of sections) {
 			document.getElementById(value).classList.remove('show');

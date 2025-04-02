@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.8
+- **Version:** 0.2.9
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -21,7 +21,7 @@ The below is **required** to be included, and customized for every page so the b
 ```html
 <ol class="pageButtons">
 	<li><a class="previousPage" href="">Previous page<br>None</a></li>
-	<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+	<li><a class="fullDocument" href="#full-document">Full document</a></li>
 	<li><a class="nextPage" href="">Next page<br>None</a></li>
 </ol>
 ```
@@ -97,7 +97,7 @@ function onHashChange() {
 				if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 					document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
 						<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
-						<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+						<li><a class="fullDocument" href="#full-document">Full document</a></li>
 						<li></li>
 					</ol>`; } }
 			// This ensures the buttons don't appear for full-document mode
@@ -107,6 +107,7 @@ function onHashChange() {
 				for (const value of sections) {
 					document.getElementById(value).classList.remove('hide');
 					document.getElementById(value).classList.add('show'); }
+					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('show'));
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
 					window.scrollTo(0, 0); } else {
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
@@ -168,5 +169,7 @@ function buttons(id) {
 The below must be included in the `respecConfig` section:
 
 ```javascript
-var respecConfig = { postProcess: [addMultipage] }
+var respecConfig = {
+	lint: { "local-refs-exist": false, },
+	postProcess: [addMultipage] }
 ```

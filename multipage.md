@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.2.9
+- **Version:** 0.3.0
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -75,7 +75,7 @@ function onHashChange() {
 	let glossary = hashSection('#glossary *');
 	let credits = hashSection('#acknowledgments section');
 	let changelog = hashSection('#changelog section');
-	let refs = hashSection('#references section');
+	let refs = hashSection('#references *');
 	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary, credits, changelog, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
 	if (document.body.classList.contains('full-document')) {

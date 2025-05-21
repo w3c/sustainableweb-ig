@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.3.0
+- **Version:** 0.3.1
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -72,11 +72,12 @@ function onHashChange() {
 	let webdev = hashSection('#web-development *');
 	let infra = hashSection('#hosting-infrastructure-and-systems *');
 	let biz = hashSection('#business-strategy-and-product-management *');
+	let considerations = hashSection('#considerations section');
 	let glossary = hashSection('#glossary *');
 	let credits = hashSection('#acknowledgments section');
 	let changelog = hashSection('#changelog section');
 	let refs = hashSection('#references *');
-	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary, credits, changelog, refs);
+	let all = sections.concat(sections, introduction, ux, webdev, infra, biz, considerations, glossary, credits, changelog, refs);
 	// Ensures the TOC is only shown to printers when the initial page is loaded
 	if (document.body.classList.contains('full-document')) {
 		document.body.classList.remove('full-document'); }
@@ -123,6 +124,7 @@ function onHashChange() {
 		heading(webdev,"web-development");
 		heading(infra,"hosting-infrastructure-and-systems");
 		heading(biz,"business-strategy-and-product-management");
+		heading(considerations,"considerations");
 		heading(glossary,"glossary");
 		heading(credits,"acknowledgments");
 		heading(changelog,"changelog");

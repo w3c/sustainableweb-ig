@@ -125,11 +125,10 @@ The below is **required** to be included directly below the `<body>` tags:
 </div>
 ```
 
-The below HTML attributes **required** to be included directly below the `<body>` tags:
+The below HTML attributes **required** to be included directly within your Success Criteria:
 
 **Note:**
 - Attribute `name` and `value` must match JavaScript case sensitivty to function.
-- Attribute content should reflect the Success Criteria as appropriate.
 - The below are what W3C WSG utilizes, feel free to customize as appropriate.
 
 ```html

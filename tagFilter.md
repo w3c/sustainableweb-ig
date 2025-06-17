@@ -192,6 +192,10 @@ legend { font-weight: bold; width: fit-content; }
 
 The below must be included within the `<head>` element:
 
+**Note:**
+- `filterNote` must match assigned CSS class names and HTML attributes to function.
+- The below are what W3C WSG utilizes, feel free to customize as appropriate.
+
 ```javascript
 <script>
 function addFilter() {
@@ -200,8 +204,6 @@ function addFilter() {
 window.addEventListener("load", (event) => {
 	addFilter(); });
 function filterData() {
-	// Fix: If Dialog Closed (Flush below Classes!)
-	// Fix: Trigger Details Close / IF full-page ADD Hide|Show CSS Selectors ELSE Remove
 	filterNote('mt', '[data-testable="machine"]');
 	filterNote('ht', '[data-testable="human"]');
 	filterNote('ih', '[data-impact="high"]');

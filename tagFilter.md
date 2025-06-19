@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.1.0
+- **Version:** 0.1.1
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -151,6 +151,7 @@ The below must be included within the `<head>` element:
 - The below are what W3C WSG utilizes, feel free to customize as appropriate.
 
 ```css
+.filter details form { content-visibility: hidden; } .filter details[open] form { content-visibility: auto; }
 legend { font-weight: bold; width: fit-content; }
 .wrapper { display: flex; flex-wrap: wrap; }
 .testable, .impact, .effort, .materials, .energy, .water, .emissions { min-width: 300px; }

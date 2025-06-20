@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.1.1
+- **Version:** 0.1.2
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -201,7 +201,9 @@ The below must be included within the `<head>` element:
 <script>
 function addFilter() {
 	window.addEventListener('change', filterData);
-	window.addEventListener('hashchange', filterStyles); filterData(); }
+	window.addEventListener('hashchange', filterStyles); filterData();
+	details.addEventListener("toggle", function() {
+		if (details.hasAttribute('open')) { details.scrollIntoView(); } }) }
 window.addEventListener("load", (event) => {
 	addFilter(); });
 function filterData() {

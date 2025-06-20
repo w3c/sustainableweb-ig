@@ -151,6 +151,7 @@ The below must be included within the `<head>` element:
 - The below are what W3C WSG utilizes, feel free to customize as appropriate.
 
 ```css
+.filter details { scroll-margin-top: 25px; }
 .filter details form { content-visibility: hidden; } .filter details[open] form { content-visibility: auto; }
 legend { font-weight: bold; width: fit-content; }
 .wrapper { display: flex; flex-wrap: wrap; }

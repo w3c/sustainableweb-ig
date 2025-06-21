@@ -203,6 +203,7 @@ The below must be included within the `<head>` element:
 function addFilter() {
 	window.addEventListener('change', filterData);
 	window.addEventListener('hashchange', filterStyles); filterData();
+	let details = document.querySelectorAll('.filter details')[0];
 	details.addEventListener("toggle", function() {
 		if (details.hasAttribute('open')) { details.scrollIntoView(); } }) }
 window.addEventListener("load", (event) => {

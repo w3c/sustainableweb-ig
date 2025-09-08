@@ -33,9 +33,9 @@ With only an hour, the group spent most of its time identifying whether existing
 
 - In all cases, we should cross reference whenever possible. 
 
-We also didn’t get a chance to discuss other dShould business guidelines drive a maturity model? If so, what are the ramifications of moving them out of the spec?
+We also didn’t get a chance to discuss other dangling questions that still need to be addressed:
 
-angling questions that still need to be addressed:
+- Should business guidelines drive a maturity model? If so, what are the ramifications of moving them out of the spec?
 
 - Are product guidelines specific to product managers? What about UX overlap?
 

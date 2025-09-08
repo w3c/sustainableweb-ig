@@ -1,11 +1,11 @@
 # ReSpec Multipage
 
-- **Version:** 0.3.3
+- **Version:** 0.3.4
 - **Creator:** Alexander Dawson
 
 ## Features
 
-- It supports ReSpec generation mode, HTML Exports, and PR Preview.
+- It supports ReSpec generation mode, HTML Exports, and PR Preview (inc dark mode).
 - Uses Vanilla JavaScript with no dependencies (lightweight).
 - Progressively enhances (no JavaScript it'll just show the full-document version).
 - Uses anchor fragments (it can work offline) and is low maintenance.
@@ -37,7 +37,7 @@ The below must be included within the `<head>` element:
 	.show { content-visibility: visible; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 .pageButtons { margin-top: 2em; padding-left: 0; }
 .pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
-.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
+.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 .previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 @media (scripting: none) {
 	@media print { #toc { display: block !important; } }

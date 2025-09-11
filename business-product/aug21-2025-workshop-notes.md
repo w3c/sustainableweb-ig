@@ -233,4 +233,17 @@ _^^^ Alexander Dawson has noted that a list of sustainability benefits would be 
 
 ### New Draft Product Strategy Intro (to use in product guidelines)
 
-Draft needed, possibly François to write?
+Product Management Guidelines:
+Product managers sit at the intersection of business strategy, user experience, and technical implementation. They make critical decisions that influence how sustainable a digital product will be throughout its lifecycle. These decisions impact not only the environmental footprint of digital products but also their social and economic sustainability.
+Product managers face competing priorities—market demands, stakeholder expectations, resource constraints, and delivery timelines—while being expected to deliver innovative solutions that meet user needs. Without specific sustainability considerations built into product development processes, sustainability often becomes an afterthought or is overlooked entirely.
+
+Goals include:
+- Integrate sustainability principles into product development methodologies and decision frameworks,
+- Balance business objectives with environmental and social responsibilities when defining product requirements,
+- Measure and optimize the sustainability impact of digital products throughout their lifecycle.
+
+Benefits include:
+- Reduced operational costs through more efficient use of computational resources and energy.
+- Expanded market reach by creating products accessible to users with varying device capabilities.
+- Enhanced brand reputation and competitive advantage through demonstrated commitment to sustainability.
+- Improved product performance that positively impacts user experience and business metrics.

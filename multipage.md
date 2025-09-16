@@ -1,6 +1,6 @@
 # ReSpec Multipage
 
-- **Version:** 0.3.4
+- **Version:** 0.3.5
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -31,7 +31,7 @@ The below is **required** to be included, and customized for every page so the b
 The below must be included within the `<head>` element:
 
 ```css
-@media print { #toc { display: none !important; } }
+@media print { body:not(.full-document) #toc { display: none !important; } }
 @media (scripting: enabled) {
 	.hide { content-visibility: hidden; display: inherit !important; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 	.show { content-visibility: visible; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
@@ -40,7 +40,6 @@ The below must be included within the `<head>` element:
 .pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 .previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 @media (scripting: none) {
-	@media print { #toc { display: block !important; } }
 	.pageButtons { display: none;}
 	.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 ```

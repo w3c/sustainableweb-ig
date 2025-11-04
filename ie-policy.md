@@ -14,9 +14,11 @@ The Chairs expect to invite individuals to participate in the Interest Group as 
 * Have contributed to the Sustainable Web IG (e.g., via the mailing list or GitHub) as non-participants.
 * Have expertise that the Chairs deem important to the success of the group, even if they have not previously contributed to either the CG or IG.
 
-Once the Chairs have extended an invitation to someone to join as an Invited Expert, that person should review the [instructions for joining the group](https://www.w3.org/groups/ig/sustainableweb/instructions/).
+Once the Chairs have extended an invitation to someone to join as an Invited Expert, that person should review the [instructions for joining the group](https://www.w3.org/groups/ig/sustainableweb/instructions/). Invited Experts are expected to follow [Participation](https://www.w3.org/2024/10/ig-sustainableweb-charter.html#participation) guidance of other group members. 
 
-Individuals are welcome to contact the Chairs to initiate a discussion about participation as an Invited Expert.
+Individuals are welcome to contact the Chairs to initiate a discussion about participation as an Invited Expert. 
+
+The chairs will periodically review the participation of Invited Experts and may rescind the invitation based on circumstances outlined in the W3C [Invited Expert Policy](https://www.w3.org/invited-experts/#review).
 
 # FAQ
 
@@ -30,7 +32,7 @@ No. Individuals who work for a W3C Member organization participate as representa
 
 ## Are there patent licensing obligations associated with participation in an Interest Group?
 
-No. There are no patent licensing obligations associated with participation in an Interest Group. However see the [disclosure obligations](https://www.w3.org/policies/patent-policy/20200915/#sec-disclosure-requirements) for Interest Group participants.
+No. There are no patent licensing obligations associated with participation in an Interest Group. However, see the [disclosure obligations](https://www.w3.org/policies/patent-policy/20200915/#sec-disclosure-requirements) for Interest Group participants.
 
 ## Can I subscribe to the mailing list even if I am not a participant?
 

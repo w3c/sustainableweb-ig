@@ -3,9 +3,7 @@
 - **Version:** 0.3.5
 - **Creator:** Alexander Dawson
 
-> [!IMPORTANT]
-
-The Sustainable Web IG has dropped this feature in favor of our [filtering system](https://w3c.github.io/sustainableweb-ig/tagFilter.html) so we won't be continuing to develop it, that being said, it is fully developed and stable so others can continue to utilize it within ReSpec.
+**Note:** The Sustainable Web IG has dropped this feature in favor of our [filtering system](https://w3c.github.io/sustainableweb-ig/tagFilter.html) so we won't be continuing to develop it, that being said, it is fully developed and stable so others can continue to utilize it within ReSpec.
 
 ## Features
 

@@ -227,7 +227,9 @@ The below must be included within the `<head>` element:
 
 		// Updates TOC based on filters
 		const toc = document.querySelector('#toc > .toc');
-			if (toc) { toc.querySelectorAll('a').forEach(link => { link.classList.remove('hidden'); }); }
+		if (toc) { toc.querySelectorAll('a').forEach(link => {
+			link.parentElement.classList.remove('hidden');
+			link.classList.remove('hidden'); }); }
 		document.querySelectorAll('body > section > section').forEach(section => {
 		let style = window.getComputedStyle(section);
 		if (style.position === 'absolute') {

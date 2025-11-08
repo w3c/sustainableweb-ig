@@ -83,98 +83,100 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	function addFilter() {
-		const toc = document.querySelector('#toc');
-		const newItems = `
-		<section id="switch" class="switch">
-			<form>
-				<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
-				<label for="filters"><input type="radio" id="filters" name="switcher">Filters</label>
-			</form>
-		</section>
-		<section id="filter" class="filter">
-			<h2 class="introductory">Content Filters</h2>
-			<form>
-				<fieldset class="testable">
-					<legend><a href="#wsg-layers-of-guidance">Testable</a></legend>
-					<label for="mt"><input type="checkbox" id="mt" name="test">Machine-testable</label>
-					<label for="ht"><input type="checkbox" id="ht" name="test">Human-testable</label>
-				</fieldset>
-				<fieldset class="materials">
-					<legend><a href="#reporting">Materials</a></legend>
-					<label for="mh"><input type="checkbox" id="mh" name="materials">High</label>
-					<label for="mm"><input type="checkbox" id="mm" name="materials">Medium</label>
-					<label for="ml"><input type="checkbox" id="ml" name="materials">Low</label>
-				</fieldset>
-				<fieldset class="energy">
-					<legend><a href="#reporting">Energy</a></legend>
-					<label for="eh"><input type="checkbox" id="eh" name="energy">High</label>
-					<label for="em"><input type="checkbox" id="em" name="energy">Medium</label>
-					<label for="el"><input type="checkbox" id="el" name="energy">Low</label>
-				</fieldset>
-				<fieldset class="water">
-					<legend><a href="#reporting">Water</a></legend>
-					<label for="wh"><input type="checkbox" id="wh" name="water">High</label>
-					<label for="wm"><input type="checkbox" id="wm" name="water">Medium</label>
-					<label for="wl"><input type="checkbox" id="wl" name="water">Low</label>
-				</fieldset>
-				<fieldset class="emissions">
-					<legend><a href="#reporting">Emissions</a></legend>
-					<label for="ch"><input type="checkbox" id="ch" name="emissions">High</label>
-					<label for="cm"><input type="checkbox" id="cm" name="emissions">Medium</label>
-					<label for="cl"><input type="checkbox" id="cl" name="emissions">Low</label>
-				</fieldset>
-				<fieldset class="standards">
-					<legend><a href="#relationships">Standards</a></legend>
-					<label for="afnor"><input type="checkbox" id="afnor" name="standard">AFNOR</label>
-					<label for="aws"><input type="checkbox" id="aws" name="standard"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Well-Architected Framework">WAF</abbr></label>
-					<label for="azure"><input type="checkbox" id="azure" name="standard"><abbr title="Microsoft Azure">Azure</abbr> WAF</label>
-					<label for="gpf"><input type="checkbox" id="gpf" name="standard"><abbr title="General Policy Framework for the Ecodesign of Digital Services">GPF</abbr></label>
-					<label for="gr491"><input type="checkbox" id="gr491" name="standard">GR491</label>
-					<label for="greenit"><input type="checkbox" id="greenit" name="standard">GreenIT</label>
-					<label for="opquast"><input type="checkbox" id="opquast" name="standard">OpQuast</label>
-					<label for="sdgs"><input type="checkbox" id="sdgs" name="standard"><abbr title="United Nations">UN</abbr> SDGs</label>
-				</fieldset>
-				<fieldset class="considerations">
-					<legend><a href="#considerations">Considerations</a></legend>
-					<label for="ca"><input type="checkbox" id="ca" name="considerations">Accessibility</label>
-					<label for="cp"><input type="checkbox" id="cp" name="considerations">Privacy</label>
-					<label for="cs"><input type="checkbox" id="cs" name="considerations">Security</label>
-				</fieldset>
-				<fieldset class="categories">
-					<legend>Categories</legend>
-					<label for="ai"><input type="checkbox" id="ai" name="category">AI</label>
-					<label for="assets"><input type="checkbox" id="assets" name="category">Assets</label>
-					<label for="compatibility"><input type="checkbox" id="compatibility" name="category">Compatibility</label>
-					<label for="content"><input type="checkbox" id="content" name="category">Content</label>
-					<label for="css"><input type="checkbox" id="css" name="category">CSS</label>
-					<label for="e-waste"><input type="checkbox" id="e-waste" name="category">E-Waste</label>
-					<label for="education"><input type="checkbox" id="education" name="category">Education</label>
-					<label for="governance"><input type="checkbox" id="governance" name="category">Governance</label>
-					<label for="hardware"><input type="checkbox" id="hardware" name="category">Hardware</label>
-					<label for="html"><input type="checkbox" id="html" name="category">HTML</label>
-					<label for="ideation"><input type="checkbox" id="ideation" name="category">Ideation</label>
-					<label for="javascript"><input type="checkbox" id="javascript" name="category">JavaScript</label>
-					<label for="kpis"><input type="checkbox" id="kpis" name="category">KPIs</label>
-					<label for="marketing"><input type="checkbox" id="marketing" name="category">Marketing</label>
-					<label for="networking"><input type="checkbox" id="networking" name="category">Networking</label>
-					<label for="patterns"><input type="checkbox" id="patterns" name="category">Patterns</label>
-					<label for="performance"><input type="checkbox" id="performance" name="category">Performance</label>
-					<label for="report"><input type="checkbox" id="report" name="category">Reporting</label>
-					<label for="research"><input type="checkbox" id="research" name="category">Research</label>
-					<label for="equity"><input type="checkbox" id="equity" name="category">Social Equity</label>
-					<label for="software"><input type="checkbox" id="software" name="category">Software</label>
-					<label for="strategy"><input type="checkbox" id="strategy" name="category">Strategy</label>
-					<label for="ui"><input type="checkbox" id="ui" name="category">UI</label>
-					<label for="usability"><input type="checkbox" id="usability" name="category">Usability</label>
-				</fieldset>
-				<div class="c">
-					<input class="reset" type="reset" value="Reset the filters">
-				</div>
-			</form>
-		</section>`;
-		toc.insertAdjacentHTML('afterbegin', newItems);
-		window.addEventListener('change', filterData); filterData(); }
+	window.addEventListener("load", (event) => { addFilter(); });
+			function addFilter() {
+				if (!document.querySelector('.switch')) {
+				const toc = document.querySelector('#toc');
+				const newItems = `
+				<section id="switch" class="switch">
+					<form>
+						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
+						<label for="filters"><input type="radio" id="filters" name="switcher">Filters</label>
+					</form>
+				</section>
+				<section id="filter" class="filter">
+					<h2 class="introductory">Content Filters</h2>
+					<form>
+						<fieldset class="testable">
+							<legend><a href="#wsg-layers-of-guidance">Testable</a></legend>
+							<label for="mt"><input type="checkbox" id="mt" name="test">Machine-testable</label>
+							<label for="ht"><input type="checkbox" id="ht" name="test">Human-testable</label>
+						</fieldset>
+						<fieldset class="materials">
+							<legend><a href="#reporting">Materials</a></legend>
+							<label for="mh"><input type="checkbox" id="mh" name="materials">High</label>
+							<label for="mm"><input type="checkbox" id="mm" name="materials">Medium</label>
+							<label for="ml"><input type="checkbox" id="ml" name="materials">Low</label>
+						</fieldset>
+						<fieldset class="energy">
+							<legend><a href="#reporting">Energy</a></legend>
+							<label for="eh"><input type="checkbox" id="eh" name="energy">High</label>
+							<label for="em"><input type="checkbox" id="em" name="energy">Medium</label>
+							<label for="el"><input type="checkbox" id="el" name="energy">Low</label>
+						</fieldset>
+						<fieldset class="water">
+							<legend><a href="#reporting">Water</a></legend>
+							<label for="wh"><input type="checkbox" id="wh" name="water">High</label>
+							<label for="wm"><input type="checkbox" id="wm" name="water">Medium</label>
+							<label for="wl"><input type="checkbox" id="wl" name="water">Low</label>
+						</fieldset>
+						<fieldset class="emissions">
+							<legend><a href="#reporting">Emissions</a></legend>
+							<label for="ch"><input type="checkbox" id="ch" name="emissions">High</label>
+							<label for="cm"><input type="checkbox" id="cm" name="emissions">Medium</label>
+							<label for="cl"><input type="checkbox" id="cl" name="emissions">Low</label>
+						</fieldset>
+						<fieldset class="standards">
+							<legend><a href="#relationships">Standards</a></legend>
+							<label for="afnor"><input type="checkbox" id="afnor" name="standard">AFNOR</label>
+							<label for="aws"><input type="checkbox" id="aws" name="standard"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Well-Architected Framework">WAF</abbr></label>
+							<label for="azure"><input type="checkbox" id="azure" name="standard"><abbr title="Microsoft Azure">Azure</abbr> WAF</label>
+							<label for="gpf"><input type="checkbox" id="gpf" name="standard"><abbr title="General Policy Framework for the Ecodesign of Digital Services">GPF</abbr></label>
+							<label for="gr491"><input type="checkbox" id="gr491" name="standard">GR491</label>
+							<label for="greenit"><input type="checkbox" id="greenit" name="standard">GreenIT</label>
+							<label for="opquast"><input type="checkbox" id="opquast" name="standard">OpQuast</label>
+							<label for="sdgs"><input type="checkbox" id="sdgs" name="standard"><abbr title="United Nations">UN</abbr> SDGs</label>
+						</fieldset>
+						<fieldset class="considerations">
+							<legend><a href="#considerations">Considerations</a></legend>
+							<label for="ca"><input type="checkbox" id="ca" name="considerations">Accessibility</label>
+							<label for="cp"><input type="checkbox" id="cp" name="considerations">Privacy</label>
+							<label for="cs"><input type="checkbox" id="cs" name="considerations">Security</label>
+						</fieldset>
+						<fieldset class="categories">
+							<legend>Categories</legend>
+							<label for="ai"><input type="checkbox" id="ai" name="category">AI</label>
+							<label for="assets"><input type="checkbox" id="assets" name="category">Assets</label>
+							<label for="compatibility"><input type="checkbox" id="compatibility" name="category">Compatibility</label>
+							<label for="content"><input type="checkbox" id="content" name="category">Content</label>
+							<label for="css"><input type="checkbox" id="css" name="category">CSS</label>
+							<label for="e-waste"><input type="checkbox" id="e-waste" name="category">E-Waste</label>
+							<label for="education"><input type="checkbox" id="education" name="category">Education</label>
+							<label for="governance"><input type="checkbox" id="governance" name="category">Governance</label>
+							<label for="hardware"><input type="checkbox" id="hardware" name="category">Hardware</label>
+							<label for="html"><input type="checkbox" id="html" name="category">HTML</label>
+							<label for="ideation"><input type="checkbox" id="ideation" name="category">Ideation</label>
+							<label for="javascript"><input type="checkbox" id="javascript" name="category">JavaScript</label>
+							<label for="kpis"><input type="checkbox" id="kpis" name="category">KPIs</label>
+							<label for="marketing"><input type="checkbox" id="marketing" name="category">Marketing</label>
+							<label for="networking"><input type="checkbox" id="networking" name="category">Networking</label>
+							<label for="patterns"><input type="checkbox" id="patterns" name="category">Patterns</label>
+							<label for="performance"><input type="checkbox" id="performance" name="category">Performance</label>
+							<label for="report"><input type="checkbox" id="report" name="category">Reporting</label>
+							<label for="research"><input type="checkbox" id="research" name="category">Research</label>
+							<label for="equity"><input type="checkbox" id="equity" name="category">Social Equity</label>
+							<label for="software"><input type="checkbox" id="software" name="category">Software</label>
+							<label for="strategy"><input type="checkbox" id="strategy" name="category">Strategy</label>
+							<label for="ui"><input type="checkbox" id="ui" name="category">UI</label>
+							<label for="usability"><input type="checkbox" id="usability" name="category">Usability</label>
+						</fieldset>
+						<div class="c">
+							<input class="reset" type="reset" value="Reset the filters">
+						</div>
+					</form>
+				</section>`;
+				toc.insertAdjacentHTML('afterbegin', newItems); }
+				window.addEventListener('change', filterData); filterData(); }
 	function filterData() {
 		filterNote('mt', '[data-testable="machine"]');
 		filterNote('ht', '[data-testable="human"]');

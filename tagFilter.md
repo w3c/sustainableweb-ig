@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.2.1
+- **Version:** 0.2.4
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -42,11 +42,11 @@ The below must be included within the `<head>` element:
 /* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
 legend { font-weight: bold; width: fit-content; }
 .switch form { display: flex; margin-bottom: 1.5em; margin-top: 1.5em; }
-.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: inline-block; padding: 0.5em; text-align: center; }
+.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: flex; padding: 0.5em; justify-content: center; }
 .switch label:has(input:checked) { background-color: #d9d9d9; color: #000000; font-weight: bold; }
-.switch label:has(input:focus:checked) { outline: 2px solid #000000; }
+.switch label:has(input:focus:checked) { outline: 4px solid var(--toclink-underline); }
 .switch label:first-child { border-right: 0; border-top-left-radius: 15px; border-bottom-left-radius: 15px; min-width: 100px; }
-.switch label:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
+.switch label:last-child { border-left: 0; border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
 .filter h2 { position: static !important; }
 .filter input { margin-bottom: 0.75em; margin-top: 0.75em; }
 .filter label { margin-right: 0.5em; white-space: nowrap; }
@@ -55,7 +55,7 @@ legend { font-weight: bold; width: fit-content; }
 .filter .c, .switch { max-width: fit-content; margin-left: auto; margin-right: auto; }
 .filter .c .reset { background-color: var(--tocsidebar-bg); border: medium solid #d9d9d9; border-radius: 15px; color: #d9d9d9; font-size: 1em; font-weight: bold; margin-bottom: 2em; padding: 1.2em 3em; }
 /* Hide All Non-SC Related Content Upon Filter Activation */
-.hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > div, #toc:has(.filter :checked) ~ section > p ~ section > section
+.hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > .summary, #toc:has(.filter :checked) ~ section > p ~ section > section
 { clip: rect(0,0,0,0) !important; content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
 /* Show Filtered Content */
 #toc:has(.filter :checked) ~ section section:has(.mt), #toc:has(.filter :checked) ~ section section:has(.ht),

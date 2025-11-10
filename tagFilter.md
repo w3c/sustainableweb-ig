@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.2.5
+- **Version:** 0.2.6
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -246,7 +246,10 @@ The below must be included within the `<head>` element:
 					link.classList.add('hidden'); } else if (
 				result === "introduction") {
 					link.parentElement.classList.add('hidden'); } }); } } });
-				document.querySelectorAll('.hidden').forEach(el => { el.setAttribute('tabindex', '-1'); }); }
+		document.querySelectorAll('a').forEach(a => {
+			if (a.classList.contains('hidden')) {
+				a.setAttribute('tabindex', '-1'); } else { a.removeAttribute('tabindex');
+			} }); }
 	function filterNote(name, attr) {
 		let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 		if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {

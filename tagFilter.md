@@ -5,10 +5,9 @@
 
 ## Features
 
-- It supports ReSpec generation mode, HTML Exports, and PR Preview.
+- It supports ReSpec generation mode, HTML Exports, PR Preview, and Echidna.
 - Uses CSS and Vanilla JavaScript with no dependencies (lightweight).
 - It works offline, progressively enhances, and is low maintenance.
-- Compatible with the [ReSpec multiPage plugin](multipage.md) (available in this repo).
 - Works across desktop and handheld browsers (good compatibility).
 
 ## HTML

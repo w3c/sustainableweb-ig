@@ -7,7 +7,7 @@
 
 ## Features
 
-- It supports ReSpec generation mode, HTML Exports, and PR Preview (inc dark mode).
+- It supports ReSpec generation mode, HTML Exports, PR Preview (inc dark mode), and Echidna.
 - Uses Vanilla JavaScript with no dependencies (lightweight).
 - Progressively enhances (no JavaScript it'll just show the full-document version).
 - Uses anchor fragments (it can work offline) and is low maintenance.

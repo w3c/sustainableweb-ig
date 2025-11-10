@@ -245,8 +245,8 @@ The below must be included within the `<head>` element:
 				if (section.id === result || result === "abstract" || result === "sotd" || result === "considerations" || result === "acknowledgments" || result === "changelog") {
 					link.classList.add('hidden'); } else if (
 				result === "introduction") {
-					link.parentElement.classList.add('hidden');
-				} }); } } }); }
+					link.parentElement.classList.add('hidden'); } }); } } });
+				document.querySelectorAll('.hidden').forEach(el => { el.setAttribute('tabindex', '-1'); }); }
 	function filterNote(name, attr) {
 		let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 		if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {

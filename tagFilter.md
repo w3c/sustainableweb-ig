@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.2.6
+- **Version:** 0.2.7
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -82,7 +82,9 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	window.addEventListener("click", (event) => { addFilter(); });
+	window.addEventListener("click", (event) => { addFilter();
+	if (document.querySelector('.filter input:checked')) {
+		document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
 	function addFilter() {
 		window.addEventListener('change', filterData); filterData(); }
 	function htmlInsert() {

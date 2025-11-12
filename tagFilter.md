@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.2.7
+- **Version:** 0.2.8
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -82,9 +82,7 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	window.addEventListener("click", (event) => { addFilter();
-	if (document.querySelector('.filter input:checked')) {
-		document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
+	window.addEventListener("click", (event) => { addFilter(); }); autoScroll();
 	function addFilter() {
 		window.addEventListener('change', filterData); filterData(); }
 	function htmlInsert() {
@@ -180,6 +178,13 @@ The below must be included within the `<head>` element:
 			</form>
 		</section>`;
 		toc.insertAdjacentHTML('beforeend', newItems2); }
+	function autoScroll() {
+		document.addEventListener('click', event => {
+		if (event.target.matches('.filter input')) {
+			document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' });
+			const inputs = document.querySelectorAll('.filter input');
+			const noneChecked = ![...inputs].some(input => input.checked);
+			if (noneChecked) { window.scrollTo({ top: 0, behavior: 'smooth' }); } } }); }
 	function filterData() {
 		filterNote('mt', '[data-testable="machine"]');
 		filterNote('ht', '[data-testable="human"]');

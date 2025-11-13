@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.3.0
+- **Version:** 0.3.1
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -84,7 +84,9 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	window.addEventListener("click", (event) => { addFilter(); }); autoScroll();
+	// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
+	window.addEventListener("click", (event) => { addFilter(); updateQueryString(); }); autoScroll();
+	window.addEventListener("load", function() { queryFilter();});
 	function addFilter() {
 		window.addEventListener('change', filterData); filterData(); }
 	function htmlInsert() {
@@ -269,31 +271,11 @@ The below must be included within the `<head>` element:
 			document.querySelectorAll(attr).forEach(function (elem) {
 				elem.classList.remove(name); }); }
 		return(name + attr); }
-	function queryFilter() {
-		// Query String Filtering onLoad
-		const queryParams = window.location.search.substring(1).toLowerCase().split('&');
-		const labels = document.querySelectorAll('.filter label');
-		document.querySelectorAll('.filter label').forEach(label => {
-		const id = label.childNodes[0].id || ''; let result;
-		const text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-		if (["high", "medium", "low"].includes(text)) {
-			result = `${id}-${text}`; } else { result = `${text}`; }
-		result = "filter=" + result;
-		if (queryParams.includes(result)) {
-			const input = label.querySelector('input');
-			if (input) { input.checked = true; } else { input.checked = false; } } });
-		const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true });
-		document.dispatchEvent(clickEvent); }
-	function queryString() {
-		document.querySelectorAll('.filter input').forEach(input => {
-			input.addEventListener('change', updateQueryString); });
-			document.addEventListener('reset', function(event) { setTimeout(updateQueryString, 0); }); }
 	function getQueryValue(input) {
 		let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
 		if (["high", "medium", "low"].includes(labelText)) {
 			return `${input.id}-${labelText}`;
-		} else { return `${labelText}`; }
-	}
+		} else { return `${labelText}`; } }
 	function updateQueryString() {
 		const url = new URL(window.location);
 		const params = new URLSearchParams(url.search);
@@ -301,7 +283,26 @@ The below must be included within the `<head>` element:
 		document.querySelectorAll('.filter input').forEach(input => {
 			if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
 		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
-	window.addEventListener('DOMContentLoaded', () => { queryFilter(); queryString(); });
+	function queryFilter() {
+		// Query String Filtering onLoad
+			const filters = document.querySelectorAll('.filter');
+			if (!filters.length) return;
+			document.querySelectorAll('.filter input').forEach(input => {
+				input.addEventListener('change', updateQueryString); });
+			document.querySelectorAll('form').forEach(form => {
+				form.addEventListener('reset', () => setTimeout(updateQueryString, 0)); });
+			const queryParams = window.location.search.substring(1).toLowerCase().split('&').filter(Boolean);
+			document.querySelectorAll('.filter label').forEach(label => {
+				const input = label.querySelector('input');
+				if (!input || !input.id) return;
+				const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
+				let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+				let result = ["high", "medium", "low"].includes(text)
+					? `${input.id}-${text}`
+					: text;
+				result = `filter=${result}`;
+				input.checked = queryParams.includes(result); });
+			if (typeof filterData === 'function') { filterData(); } }			
 </script>
 ```
 
@@ -309,5 +310,5 @@ The below must be included in the `respecConfig` section:
 
 ```javascript
 var respecConfig = {
-	postProcess: [htmlInsert, addFilter] }
+	postProcess: [htmlInsert, addFilter, queryFilter] }
 ```

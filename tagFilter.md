@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.2.9
+- **Version:** 0.3.0
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -9,6 +9,7 @@
 - Uses CSS and Vanilla JavaScript with no dependencies (lightweight).
 - It works offline, progressively enhances, and is low maintenance.
 - Works across desktop and handheld browsers (good compatibility).
+- It supports query strings based on tag names (and `id` where duplication exists).
 
 ## HTML
 
@@ -268,6 +269,39 @@ The below must be included within the `<head>` element:
 			document.querySelectorAll(attr).forEach(function (elem) {
 				elem.classList.remove(name); }); }
 		return(name + attr); }
+	function queryFilter() {
+		// Query String Filtering onLoad
+		const queryParams = window.location.search.substring(1).toLowerCase().split('&');
+		const labels = document.querySelectorAll('.filter label');
+		document.querySelectorAll('.filter label').forEach(label => {
+		const id = label.childNodes[0].id || ''; let result;
+		const text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+		if (["high", "medium", "low"].includes(text)) {
+			result = `${id}-${text}`; } else { result = `${text}`; }
+		result = "filter=" + result;
+		if (queryParams.includes(result)) {
+			const input = label.querySelector('input');
+			if (input) { input.checked = true; } else { input.checked = false; } } });
+		const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true });
+		document.dispatchEvent(clickEvent); }
+	function queryString() {
+		document.querySelectorAll('.filter input').forEach(input => {
+			input.addEventListener('change', updateQueryString); });
+			document.addEventListener('reset', function(event) { setTimeout(updateQueryString, 0); }); }
+	function getQueryValue(input) {
+		let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+		if (["high", "medium", "low"].includes(labelText)) {
+			return `${input.id}-${labelText}`;
+		} else { return `${labelText}`; }
+	}
+	function updateQueryString() {
+		const url = new URL(window.location);
+		const params = new URLSearchParams(url.search);
+		params.delete('filter');
+		document.querySelectorAll('.filter input').forEach(input => {
+			if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
+		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
+	window.addEventListener('DOMContentLoaded', () => { queryFilter(); queryString(); });
 </script>
 ```
 

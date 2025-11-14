@@ -84,9 +84,8 @@ The below must be included within the `<head>` element:
 
 ```javascript
 <script>
-	// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
-	window.addEventListener("click", (event) => { addFilter(); updateQueryString(); }); autoScroll();
-	window.addEventListener("load", function() { queryFilter();});
+	window.addEventListener("click", (event) => { addFilter(); updateQueryString(); });
+	window.addEventListener("load", function() { queryFilter(); });
 	function addFilter() {
 		window.addEventListener('change', filterData); filterData(); }
 	function htmlInsert() {
@@ -277,35 +276,35 @@ The below must be included within the `<head>` element:
 			return `${input.id}-${labelText}`;
 		} else { return `${labelText}`; } }
 	function updateQueryString() {
-		const url = new URL(window.location);
-		const params = new URLSearchParams(url.search);
+		autoScroll();
+		const params = new URLSearchParams(window.location.search);
 		params.delete('filter');
-		document.querySelectorAll('.filter input').forEach(input => {
-			if (input.checked) {
-				const value = getQueryValue(input);
-				params.append('filter', value); } });
+		document.querySelectorAll('.filter input:checked').forEach(input => params.append('filter', getQueryValue(input)));
+		const query = params.toString();
 		const hash = window.location.hash;
-		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}${hash}`); }
+		let newUrl = window.location.pathname;
+		if (window.location.search || query) { newUrl += '?' + query; }
+		history.replaceState(null, '', newUrl += hash); }
 	function queryFilter() {
 		// Query String Filtering onLoad
-			const filters = document.querySelectorAll('.filter');
-			if (!filters.length) return;
-			document.querySelectorAll('.filter input').forEach(input => {
-				input.addEventListener('change', updateQueryString); });
-			document.querySelectorAll('form').forEach(form => {
-				form.addEventListener('reset', () => setTimeout(updateQueryString, 0)); });
-			const queryParams = window.location.search.substring(1).toLowerCase().split('&').filter(Boolean);
-			document.querySelectorAll('.filter label').forEach(label => {
-				const input = label.querySelector('input');
-				if (!input || !input.id) return;
-				const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
-				let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-				let result = ["high", "medium", "low"].includes(text)
-					? `${input.id}-${text}`
-					: text;
-				result = `filter=${result}`;
-				input.checked = queryParams.includes(result); });
-			if (typeof filterData === 'function') { filterData(); } }			
+		const filters = document.querySelectorAll('.filter');
+		if (!filters.length) return;
+		document.querySelectorAll('.filter input').forEach(input => {
+			input.addEventListener('change', updateQueryString); });
+		document.querySelectorAll('form').forEach(form => {
+			form.addEventListener('reset', () => setTimeout(updateQueryString, 0)); });
+		const queryParams = window.location.search.substring(1).toLowerCase().split('&').filter(Boolean);
+		document.querySelectorAll('.filter label').forEach(label => {
+			const input = label.querySelector('input');
+			if (!input || !input.id) return;
+			const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
+			let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+			let result = ["high", "medium", "low"].includes(text)
+				? `${input.id}-${text}`
+				: text;
+			result = `filter=${result}`;
+			input.checked = queryParams.includes(result); });
+		if (typeof filterData === 'function') { filterData(); } }
 </script>
 ```
 

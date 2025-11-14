@@ -282,7 +282,7 @@ The below must be included within the `<head>` element:
 		params.delete('filter');
 		document.querySelectorAll('.filter input').forEach(input => {
 			if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
-		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
+		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}${url.hash}`); }
 	function queryFilter() {
 		// Query String Filtering onLoad
 			const filters = document.querySelectorAll('.filter');

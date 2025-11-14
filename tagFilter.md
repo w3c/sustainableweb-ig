@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.3.1
+- **Version:** 0.3.2
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -281,8 +281,11 @@ The below must be included within the `<head>` element:
 		const params = new URLSearchParams(url.search);
 		params.delete('filter');
 		document.querySelectorAll('.filter input').forEach(input => {
-			if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
-		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}${url.hash}`); }
+			if (input.checked) {
+				const value = getQueryValue(input);
+				params.append('filter', value); } });
+		const hash = window.location.hash;
+		window.history.replaceState({}, '', `${url.pathname}?${params.toString()}${hash}`); }
 	function queryFilter() {
 		// Query String Filtering onLoad
 			const filters = document.querySelectorAll('.filter');

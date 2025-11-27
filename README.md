@@ -95,9 +95,13 @@ The co-chairs of the Sustainable Web Interest Group are:
  - **Tim Frick** (Mightybytes)
  - **Mike Gifford** (CivicActions)
 
-The editor of the Web Sustainability Guidelines (WSG) is:
+Lead Editor of the Web Sustainability Guidelines (WSG) is:
 
  - **Alexander Dawson** (Invited Expert)
+
+Editor of the Web Sustainability Guidelines (WSG) is:
+
+ - **Rose Newell** (Invited Expert)
 
 The W3C Team Contact for the group is:
 

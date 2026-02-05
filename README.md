@@ -87,7 +87,7 @@ To keep up-to-date with our activity, make sure you're signed up to our [public 
 
 Our Interest Group may on occasion choose to run workshops to help organizations, groups, and individuals better understand how to meet the targets laid out in the Web Sustainability Guidelines (WSG). In addition, as part of our outreach efforts participants may choose to speak at or attend various events to spread the word about or gain industry feedback on our work.
 
-You can find more information about our outreach efforts, and where we spot external implementations, papers, articles, newsletters, media, events etc relating to Web Sustainability Guidelines and it's deliverables in our [Campaign Toolkit](campaign-toolkit.md)
+You can find more information about our outreach efforts, and where we spot external implementations, papers, articles, newsletters, media, events etc relating to Web Sustainability Guidelines and it's deliverables in our [Campaign Toolkit](campaign-toolkit.md).
 
 ## Participants
 

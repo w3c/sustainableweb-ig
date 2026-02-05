@@ -157,10 +157,11 @@ Sustainable Web Design Guidelines \[[Source](https://nva.sikt.no/registration/01
 - [Reindeer](https://tech.reyndeer.com/articles/building-sustainable-websites/) - An article on web sustainability and it includes a backlink to our spec.
 - [Rickety Roo](https://ricketyroo.com/blog/sustainable-web-design/) - Talks about sustainability, but confuses who wrote the guidelines.
 - [RinenWeb](https://rinenweb.eu/blog/viosimi-anaptyksi-istotopon-kai-efarmogon-kai-pos-na-tin-petyxeis) (_Greek_) - A good overview of sustainability that mentions our work.
+- [Rose Newell](https://codewordcreative.com/blog/diy-website/) - An article about DIY'ing a website that mentions WSG.
 - Rosenfeld Media \[[1](https://medium.com/rosenfeld-media-climate-ux/decarbonising-user-journeys-how-minimizing-enables-us-to-do-more-with-less-2e72d200bdcb) & [2](https://medium.com/rosenfeld-media-climate-ux/climate-ux-case-study-the-journey-of-building-a-sustainable-design-practice-1a271c0de97c)] - Articles about UX and sustainability linking to WSG.
 - [Screen Span](https://screenspan.net/talks/green-perf-metric/) - Video and Slideshow which talks about sustainability and our content.
 - [SD Times](https://sdtimes.com/webdev/w3c-releases-new-guidelines-for-web-sustainability/) - News press release.
-- [SEOAbility](https://www.seobility.net/en/blog/javascript-and-seo/) - An article on JavaScript SEO, but it mentions our work and its impact.
+- [SEObility](https://www.seobility.net/en/blog/javascript-and-seo/) - An article on JavaScript SEO, but it mentions our work and its impact.
 - [Site Moderne](https://site-moderne.fr/blog/article_eco_conception.html) (_French_) - A great article on sustainability that connects to WSG.
 - [Sopra Setria](https://www.soprasteria.it/digital_digest_blog/article2/sostenibilita-digitale-digital-sustainability-officer) (_Italian_) - An article about sustainability linking to the WSG.
 - [Stéphane Lecorney](https://www.researchgate.net/publication/376702697_Review_of_Web_Analytic_tools_for_eco-conception) - Research paper of Web Analytic tools for eco-conception.
@@ -269,8 +270,8 @@ Sustainable Web Design Guidelines \[[Source](https://nva.sikt.no/registration/01
 - **Greener Services Hack Day** (22/03/23)\
   Defra, TPXImpact, Etc (_Alexander Dawson & Neil Clark_)
 - **GSF Brighton Meetup** (Brighton)\
-  [The Web Sustainability Guidelines](https://drive.google.com/file/d/1lDcUEh-ZqvxIukVDPvt4da-SjnFPXuW1/view)\
-  16/07/25 (_Alexander Dawson_)
+  [The Web Sustainability Guidelines](https://www.youtube.com/watch?v=2UzhVT-ZaT4)\
+  21/91/26 (_Alexander Dawson_)
 - **GSF Brighton Meetup** (Brighton)\
   [Laws and Policies (Lightning Talk)](https://drive.google.com/file/d/1lDcUEh-ZqvxIukVDPvt4da-SjnFPXuW1/view)\
   16/07/25 (_Alexander Dawson_)

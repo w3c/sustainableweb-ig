@@ -1,7 +1,5 @@
 # Web Sustainability Guidelines Campaign Toolkit
 
-***
-
 > [!CAUTION]
 > Resources are for information purposes only, no endorsement is implied. Neither the W3C nor the Sustainable Web Interest Group can guarantee the sustainability of these external resources.
 

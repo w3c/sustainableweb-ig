@@ -7,7 +7,7 @@ Digital Sustainability is an evolving field that is complex and undergoing signi
 
 The mission of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is to improve digital sustainability so that the Web works better for all people and the planet.
 
-We do this through advancing the development of the [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustainableweb-wsg/), its [supplementary materials](https://github.com/w3c/sustainableweb-wsg), and advocacy work (in digital sustainability) to educate and advise on any implementations of our work and its importance in the context of their organizations.
+We do this through advancing the development of the [Web Sustainability Guidelines (WSG)]([https://w3c.github.io/sustainableweb-wsg/](https://www.w3.org/TR/web-sustainability-guidelines/)), its [supplementary materials](https://github.com/w3c/sustainableweb-wsg), and advocacy work (in digital sustainability) to educate and advise on any implementations of our work and its importance in the context of their organizations.
 
 See also the [Sustainable Web Interest Group Charter](https://www.w3.org/2024/10/ig-sustainableweb-charter.html).
 

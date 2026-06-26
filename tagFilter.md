@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.3.4
+- **Version:** 0.3.5
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -20,7 +20,7 @@ The below attributes are **required** to be included within `<section>` elements
 - The below are what W3C WSG utilizes, feel free to customize as appropriate.
 
 ```html
-<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
+<section class="notoc" data-standard="AFNOR" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
 	<h4 id="identify-and-define">Success Criterion: Identify and define <span class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX02-1">Resources</a></span></h4>
 	<p>Primary and secondary target visitors are identified, and their needs are defined through quantitative or qualitative research, testing, or analytics, ensuring your visitors and affected communities remain a close part of the research and testing process.</p>
 </section>
@@ -59,13 +59,9 @@ legend { font-weight: bold; width: fit-content; }
 .hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > .summary, #toc:has(.filter :checked) ~ section > p ~ section > section
 { clip: rect(0,0,0,0) !important; content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
 /* Show Filtered Content */
-#toc:has(.filter :checked) ~ section section:has(.mh), #toc:has(.filter :checked) ~ section section:has(.mm), #toc:has(.filter :checked) ~ section section:has(.ml),
-#toc:has(.filter :checked) ~ section section:has(.eh), #toc:has(.filter :checked) ~ section section:has(.em), #toc:has(.filter :checked) ~ section section:has(.el),
-#toc:has(.filter :checked) ~ section section:has(.wh), #toc:has(.filter :checked) ~ section section:has(.wm), #toc:has(.filter :checked) ~ section section:has(.wl),
-#toc:has(.filter :checked) ~ section section:has(.ch), #toc:has(.filter :checked) ~ section section:has(.cm), #toc:has(.filter :checked) ~ section section:has(.cl),
 #toc:has(.filter :checked) ~ section section:has(.afnor), #toc:has(.filter :checked) ~ section section:has(.aws), #toc:has(.filter :checked) ~ section section:has(.azure), #toc:has(.filter :checked) ~ section section:has(.gpf), #toc:has(.filter :checked) ~ section section:has(.gr491), #toc:has(.filter :checked) ~ section section:has(.greenit), #toc:has(.filter :checked) ~ section section:has(.opquast), #toc:has(.filter :checked) ~ section section:has(.sdgs), #toc:has(.filter :checked) ~ section section:has(.ca), #toc:has(.filter :checked) ~ section section:has(.cp), #toc:has(.filter :checked) ~ section section:has(.cs), #toc:has(.filter :checked) ~ section section:has(.ai), #toc:has(.filter :checked) ~ section section:has(.assets), #toc:has(.filter :checked) ~ section section:has(.compatibility), #toc:has(.filter :checked) ~ section section:has(.content), #toc:has(.filter :checked) ~ section section:has(.css), #toc:has(.filter :checked) ~ section section:has(.e-waste), #toc:has(.filter :checked) ~ section section:has(.education), #toc:has(.filter :checked) ~ section section:has(.governance), #toc:has(.filter :checked) ~ section section:has(.hardware), #toc:has(.filter :checked) ~ section section:has(.html), #toc:has(.filter :checked) ~ section section:has(.ideation), #toc:has(.filter :checked) ~ section section:has(.javascript), #toc:has(.filter :checked) ~ section section:has(.kpis), #toc:has(.filter :checked) ~ section section:has(.marketing), #toc:has(.filter :checked) ~ section section:has(.networking), #toc:has(.filter :checked) ~ section section:has(.patterns), #toc:has(.filter :checked) ~ section section:has(.performance), #toc:has(.filter :checked) ~ section section:has(.report), #toc:has(.filter :checked) ~ section section:has(.research), #toc:has(.filter :checked) ~ section section:has(.equity), #toc:has(.filter :checked) ~ section section:has(.software), #toc:has(.filter :checked) ~ section section:has(.strategy), #toc:has(.filter :checked) ~ section section:has(.ui), #toc:has(.filter :checked) ~ section section:has(.usability),
-.mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
-.mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
+.afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
+.afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
 { clip: auto; content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
 @media print { .switch { display: none; } }
 @media (scripting: none) { .switch, .filter { display: none; } }
@@ -102,30 +98,6 @@ The below must be included within the `<head>` element:
 		<section id="filter" class="filter">
 			<h2 class="introductory">Content Filters</h2>
 			<form>
-				<fieldset class="materials">
-					<legend><a href="#reporting">Materials</a></legend>
-					<label for="mh"><input type="checkbox" id="mh" name="materials">High</label>
-					<label for="mm"><input type="checkbox" id="mm" name="materials">Medium</label>
-					<label for="ml"><input type="checkbox" id="ml" name="materials">Low</label>
-				</fieldset>
-				<fieldset class="energy">
-					<legend><a href="#reporting">Energy</a></legend>
-					<label for="eh"><input type="checkbox" id="eh" name="energy">High</label>
-					<label for="em"><input type="checkbox" id="em" name="energy">Medium</label>
-					<label for="el"><input type="checkbox" id="el" name="energy">Low</label>
-				</fieldset>
-				<fieldset class="water">
-					<legend><a href="#reporting">Water</a></legend>
-					<label for="wh"><input type="checkbox" id="wh" name="water">High</label>
-					<label for="wm"><input type="checkbox" id="wm" name="water">Medium</label>
-					<label for="wl"><input type="checkbox" id="wl" name="water">Low</label>
-				</fieldset>
-				<fieldset class="emissions">
-					<legend><a href="#reporting">Emissions</a></legend>
-					<label for="ch"><input type="checkbox" id="ch" name="emissions">High</label>
-					<label for="cm"><input type="checkbox" id="cm" name="emissions">Medium</label>
-					<label for="cl"><input type="checkbox" id="cl" name="emissions">Low</label>
-				</fieldset>
 				<fieldset class="standards">
 					<legend><a href="#relationships">Standards</a></legend>
 					<label for="afnor"><input type="checkbox" id="afnor" name="standard">AFNOR</label>
@@ -184,18 +156,6 @@ The below must be included within the `<head>` element:
 			const noneChecked = ![...inputs].some(input => input.checked);
 			if (noneChecked) { window.scrollTo({ top: 0, behavior: 'smooth' }); } } }); }
 	function filterData() {
-		filterNote('mh', '[data-materials="high"]');
-		filterNote('mm', '[data-materials="medium"]');
-		filterNote('ml', '[data-materials="low"]');
-		filterNote('eh', '[data-energy="high"]');
-		filterNote('em', '[data-energy="medium"]');
-		filterNote('el', '[data-energy="low"]');
-		filterNote('wh', '[data-water="high"]');
-		filterNote('wm', '[data-water="medium"]');
-		filterNote('wl', '[data-water="low"]');
-		filterNote('ch', '[data-emissions="high"]');
-		filterNote('cm', '[data-emissions="medium"]');
-		filterNote('cl', '[data-emissions="low"]');
 		filterNote('afnor', '[data-standard*="AFNOR"]');
 		filterNote('aws', '[data-standard*="AWS WAF"]');
 		filterNote('azure', '[data-standard*="Azure WAF"]');

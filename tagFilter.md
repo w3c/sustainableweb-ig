@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.3.5
+- **Version:** 0.3.6
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -20,7 +20,7 @@ The below attributes are **required** to be included within `<section>` elements
 - The below are what W3C WSG utilizes, feel free to customize as appropriate.
 
 ```html
-<section class="notoc" data-standard="AFNOR" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
+<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="medium" data-standard="AFNOR" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
 	<h4 id="identify-and-define">Success Criterion: Identify and define <span class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX02-1">Resources</a></span></h4>
 	<p>Primary and secondary target visitors are identified, and their needs are defined through quantitative or qualitative research, testing, or analytics, ensuring your visitors and affected communities remain a close part of the research and testing process.</p>
 </section>
@@ -59,8 +59,11 @@ legend { font-weight: bold; width: fit-content; }
 .hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > .summary, #toc:has(.filter :checked) ~ section > p ~ section > section
 { clip: rect(0,0,0,0) !important; content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
 /* Show Filtered Content */
+#toc:has(.filter :checked) ~ section section:has(.people-high), #toc:has(.filter :checked) ~ section section:has(.people-medium), #toc:has(.filter :checked) ~ section section:has(.people-low), #toc:has(.filter :checked) ~ section section:has(.people-indeterminate), #toc:has(.filter :checked) ~ section section:has(.planet-high), #toc:has(.filter :checked) ~ section section:has(.planet-medium), #toc:has(.filter :checked) ~ section section:has(.planet-low), #toc:has(.filter :checked) ~ section section:has(.planet-indeterminate), #toc:has(.filter :checked) ~ section section:has(.prosperity-high), #toc:has(.filter :checked) ~ section section:has(.prosperity-medium), #toc:has(.filter :checked) ~ section section:has(.prosperity-low), #toc:has(.filter :checked) ~ section section:has(.prosperity-indeterminate), #toc:has(.filter :checked) ~ section section:has(.timeframe-long), #toc:has(.filter :checked) ~ section section:has(.timeframe-medium), #toc:has(.filter :checked) ~ section section:has(.timeframe-short),
 #toc:has(.filter :checked) ~ section section:has(.afnor), #toc:has(.filter :checked) ~ section section:has(.aws), #toc:has(.filter :checked) ~ section section:has(.azure), #toc:has(.filter :checked) ~ section section:has(.gpf), #toc:has(.filter :checked) ~ section section:has(.gr491), #toc:has(.filter :checked) ~ section section:has(.greenit), #toc:has(.filter :checked) ~ section section:has(.opquast), #toc:has(.filter :checked) ~ section section:has(.sdgs), #toc:has(.filter :checked) ~ section section:has(.ca), #toc:has(.filter :checked) ~ section section:has(.cp), #toc:has(.filter :checked) ~ section section:has(.cs), #toc:has(.filter :checked) ~ section section:has(.ai), #toc:has(.filter :checked) ~ section section:has(.assets), #toc:has(.filter :checked) ~ section section:has(.compatibility), #toc:has(.filter :checked) ~ section section:has(.content), #toc:has(.filter :checked) ~ section section:has(.css), #toc:has(.filter :checked) ~ section section:has(.e-waste), #toc:has(.filter :checked) ~ section section:has(.education), #toc:has(.filter :checked) ~ section section:has(.governance), #toc:has(.filter :checked) ~ section section:has(.hardware), #toc:has(.filter :checked) ~ section section:has(.html), #toc:has(.filter :checked) ~ section section:has(.ideation), #toc:has(.filter :checked) ~ section section:has(.javascript), #toc:has(.filter :checked) ~ section section:has(.kpis), #toc:has(.filter :checked) ~ section section:has(.marketing), #toc:has(.filter :checked) ~ section section:has(.networking), #toc:has(.filter :checked) ~ section section:has(.patterns), #toc:has(.filter :checked) ~ section section:has(.performance), #toc:has(.filter :checked) ~ section section:has(.report), #toc:has(.filter :checked) ~ section section:has(.research), #toc:has(.filter :checked) ~ section section:has(.equity), #toc:has(.filter :checked) ~ section section:has(.software), #toc:has(.filter :checked) ~ section section:has(.strategy), #toc:has(.filter :checked) ~ section section:has(.ui), #toc:has(.filter :checked) ~ section section:has(.usability),
+.people-high, .people-medium, .people-low, .people-indeterminate, .planet-high, .planet-medium, .planet-low, .planet-indeterminate, .prosperity-high, .prosperity-medium, .prosperity-low, .prosperity-indeterminate, .timeframe-long, .timeframe-medium, .timeframe-short,
 .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
+.people-high ~ section:last-child, .people-medium ~ section:last-child, .people-low ~ section:last-child, .people-indeterminate ~ section:last-child, .planet-high ~ section:last-child, .planet-medium ~ section:last-child, .planet-low ~ section:last-child, .planet-indeterminate ~ section:last-child, .prosperity-high ~ section:last-child, .prosperity-medium ~ section:last-child, .prosperity-low ~ section:last-child, .prosperity-indeterminate ~ section:last-child, .timeframe-long ~ section:last-child, .timeframe-medium ~ section:last-child, .timeframe-short ~ section:last-child,
 .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
 { clip: auto; content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
 @media print { .switch { display: none; } }
@@ -98,6 +101,33 @@ The below must be included within the `<head>` element:
 		<section id="filter" class="filter">
 			<h2 class="introductory">Content Filters</h2>
 			<form>
+				<fieldset class="people">
+					<legend><a href="#impact">People</a></legend>
+					<label for="people-high"><input type="checkbox" id="people-high" name="emissions">High</label>
+					<label for="people-medium"><input type="checkbox" id="people-medium" name="emissions">Medium</label>
+					<label for="people-low"><input type="checkbox" id="people-low" name="emissions">Low</label>
+					<label for="people-indeterminate"><input type="checkbox" id="people-indeterminate" name="emissions">Indeterminate</label>
+				</fieldset>
+				<fieldset class="planet">
+					<legend><a href="#impact">Planet</a></legend>
+					<label for="planet-high"><input type="checkbox" id="planet-high" name="emissions">High</label>
+					<label for="planet-medium"><input type="checkbox" id="planet-medium" name="emissions">Medium</label>
+					<label for="planet-low"><input type="checkbox" id="planet-low" name="emissions">Low</label>
+					<label for="planet-indeterminate"><input type="checkbox" id="planet-indeterminate" name="emissions">Indeterminate</label>
+				</fieldset>
+				<fieldset class="prosperity">
+					<legend><a href="#impact">Prosperity</a></legend>
+					<label for="prosperity-high"><input type="checkbox" id="prosperity-high" name="emissions">High</label>
+					<label for="prosperity-medium"><input type="checkbox" id="prosperity-medium" name="emissions">Medium</label>
+					<label for="prosperity-low"><input type="checkbox" id="prosperity-low" name="emissions">Low</label>
+					<label for="prosperity-indeterminate"><input type="checkbox" id="prosperity-indeterminate" name="emissions">Indeterminate</label>
+				</fieldset>
+				<fieldset class="timeframe">
+					<legend><a href="#impact">Timeframe</a></legend>
+					<label for="timeframe-long"><input type="checkbox" id="timeframe-long" name="emissions">Long</label>
+					<label for="timeframe-medium"><input type="checkbox" id="timeframe-medium" name="emissions">Medium</label>
+					<label for="timeframe-short"><input type="checkbox" id="timeframe-short" name="emissions">Short</label>
+				</fieldset>
 				<fieldset class="standards">
 					<legend><a href="#relationships">Standards</a></legend>
 					<label for="afnor"><input type="checkbox" id="afnor" name="standard">AFNOR</label>
@@ -156,6 +186,21 @@ The below must be included within the `<head>` element:
 			const noneChecked = ![...inputs].some(input => input.checked);
 			if (noneChecked) { window.scrollTo({ top: 0, behavior: 'smooth' }); } } }); }
 	function filterData() {
+		filterNote('people-high', '[data-people*="high"]');
+		filterNote('people-medium', '[data-people*="medium"]');
+		filterNote('people-low', '[data-people*="low"]');
+		filterNote('people-indeterminate', '[data-people*="indeterminate"]');
+		filterNote('planet-high', '[data-planet*="high"]');
+		filterNote('planet-medium', '[data-planet*="medium"]');
+		filterNote('planet-low', '[data-planet*="low"]');
+		filterNote('planet-indeterminate', '[data-planet*="indeterminate"]');
+		filterNote('prosperity-high', '[data-prosperity*="high"]');
+		filterNote('prosperity-medium', '[data-prosperity*="medium"]');
+		filterNote('prosperity-low', '[data-prosperity*="low"]');
+		filterNote('prosperity-indeterminate', '[data-prosperity*="indeterminate"]');
+		filterNote('timeframe-long', '[data-timeframe*="long"]');
+		filterNote('timeframe-medium', '[data-timeframe*="medium"]');
+		filterNote('timeframe-short', '[data-timeframe*="short"]');
 		filterNote('afnor', '[data-standard*="AFNOR"]');
 		filterNote('aws', '[data-standard*="AWS WAF"]');
 		filterNote('azure', '[data-standard*="Azure WAF"]');
@@ -225,7 +270,7 @@ The below must be included within the `<head>` element:
 		return(name + attr); }
 	function getQueryValue(input) {
 		let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-		if (["high", "medium", "low"].includes(labelText)) {
+		if (["high", "medium", "low", "indeterminate", "long", "short"].includes(labelText)) {
 			return `${input.id}-${labelText}`;
 		} else { return `${labelText}`; } }
 	function updateQueryString() {
@@ -252,7 +297,7 @@ The below must be included within the `<head>` element:
 			if (!input || !input.id) return;
 			const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
 			let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-			let result = ["high", "medium", "low"].includes(text)
+			let result = ["high", "medium", "low", "indeterminate", "long", "short"].includes(text)
 				? `${input.id}-${text}`
 				: text;
 			result = `filter=${result}`;

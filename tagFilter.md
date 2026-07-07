@@ -1,6 +1,6 @@
 # ReSpec Tag and Filter
 
-- **Version:** 0.3.6
+- **Version:** 0.3.7
 - **Creator:** Alexander Dawson
 
 ## Features
@@ -271,8 +271,8 @@ The below must be included within the `<head>` element:
 	function getQueryValue(input) {
 		let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
 		if (["high", "medium", "low", "indeterminate", "long", "short"].includes(labelText)) {
-			return `${input.id}-${labelText}`;
-		} else { return `${labelText}`; } }
+			return input.id.endsWith(`-${labelText}`) ? input.id : `${input.id}-${labelText}`;
+		} else { return labelText; } }
 	function updateQueryString() {
 		autoScroll();
 		const params = new URLSearchParams(window.location.search);
@@ -298,7 +298,7 @@ The below must be included within the `<head>` element:
 			const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
 			let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
 			let result = ["high", "medium", "low", "indeterminate", "long", "short"].includes(text)
-				? `${input.id}-${text}`
+				? input.id
 				: text;
 			result = `filter=${result}`;
 			input.checked = queryParams.includes(result); });

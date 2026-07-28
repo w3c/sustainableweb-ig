@@ -21,7 +21,7 @@ The below attributes are **required** to be included within `<section>` elements
 
 ```html
 <section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="medium" data-standard="AFNOR" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
-	<h4 id="identify-and-define">Success Criterion: Identify and define <span class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX02-1">Resources</a></span></h4>
+	<h4 id="identify-and-define">Success Criterion: Identify and define <span class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-ig/docs/resources.html#UX02-1">Resources</a></span></h4>
 	<p>Primary and secondary target visitors are identified, and their needs are defined through quantitative or qualitative research, testing, or analytics, ensuring your visitors and affected communities remain a close part of the research and testing process.</p>
 </section>
 ```

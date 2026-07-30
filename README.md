@@ -61,7 +61,7 @@ Welcome to the repository for the [W3C Sustainable Web Interest Group](https://w
 - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
 - **500+** pages worth of sustainability material (**100** of which exist within WSG).
 - **50** content filters based upon **4** different sustainability categories.
-- **200+** contributors from over **25** nations around the world.
+- **200+** contributors from over **30** nations around the world.
 
 ## Work
 

@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Group Note Draft",
-	"lastModified": "2026-07-03",
+	"lastModified": "2026-08-04",
 	"category": [
 		{
 			"id": "1",
@@ -1390,7 +1390,7 @@
 						},
 						{
 							"title": "Maintaining compatibility",
-							"description": "Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.",
+							"description": "Avoid planned obsolescence. Maintain compatibility for as long as reasonably possible while ensuring components that remain in use continue to meet security and operational requirements. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.",
 							"resources": [
 								{
 									"A Framework for Evaluating Browser Support": "https://www.joshwcomeau.com/css/browser-support/",
@@ -2431,7 +2431,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability.",
+							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations without assessing the potential security, maintenance, and lifecycle impacts.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -2581,7 +2581,7 @@
 						},
 						{
 							"title": "Optimized methodology",
-							"description": "Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions.",
+							"description": "Use the most performant and sustainable approach for your use case. Coding from scratch can often reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the security, maintenance, and lifecycle impacts have been assessed. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2719,7 +2719,7 @@
 					"subheading": "Optimize database use by minimizing and scoping queries, reducing repeated requests, and applying data governance practices.",
 					"criteria": [
 						{
-							"title": "Database queries",
+							"title": "Efficient database querying",
 							"description": "Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or ORM code, especially for frequently accessed data.",
 							"resources": [
 								{
@@ -2735,7 +2735,7 @@
 							]
 						},
 						{
-							"title": "Database queries",
+							"title": "Reuse of retrieved data",
 							"description": "Retrieve data only once per request or process and reuse it locally instead of repeating database queries.",
 							"resources": [
 								{
@@ -2751,7 +2751,7 @@
 							]
 						},
 						{
-							"title": "Database queries",
+							"title": "Data minimization in queries",
 							"description": "Scope database queries to return only the fields and records that are required.",
 							"resources": [
 								{
@@ -2766,8 +2766,8 @@
 							]
 						},
 						{
-							"title": "Database queries",
-							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers like UUIDs, de-identification, and minimization of stored data in line with purpose limitation principles.",
+							"title": "Data lifecycle controls",
+							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers, de-identification, and minimization of stored data in line with purpose limitation principles.",
 							"resources": [
 								{
 									"Best practices for SQLite performance": "https://developer.android.com/topic/performance/sqlite-performance-best-practices",
@@ -3035,36 +3035,51 @@
 					"subheading": "Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.",
 					"criteria": [
 						{
-							"title": "Caching resources",
-							"description": "Use caching to reduce processing time and repeated database queries, API calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered.",
+							"title": "Client-side caching",
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure expected resources are being reused and behaving as expected.",
+							"resources": [
+								{
+									"A Web Caching Primer": "https://www.researchgate.net/publication/2570397_A_Web_Caching_Primer",
+									"Back/forward cache": "https://web.dev/articles/bfcache?hl=en",
+									"Caching": "https://planetscale.com/blog/caching",
+									"Client-side storage": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage",
+									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
+									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 2-7032 - Browser Caches": "https://gr491.isit-europe.org/en/crit.php?id=2-7032-backend-the-use-of-certain-frameworks-in-particular",
+									"GR491 - 3-5015 - Cache Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-5015-frontend-the-reduction-of-the-volumes-of-exchanges",
+									"GR491 - 7-3051 - Search Utilization": "https://gr491.isit-europe.org/en/crit.php?id=7-3051-uxui-internat-search-engines-usage-in-the-service",
+									"How to Build a Low-tech Website?": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
+									"How to improve your page load time with browser caching": "https://www.debugbear.com/blog/browser-caching",
+									"Microsoft Azure WAF - Server VS Client Rendering": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design#evaluate-server-side-vs-client-side-rendering",
+									"My solar-powered and self-hosted website": "https://dri.es/my-solar-powered-and-self-hosted-website",
+									"Resilient web design": "https://resilientwebdesign.com/"
+								}
+							]
+						},
+						{
+							"title": "Server-side caching",
+							"description": "Use server-side caching to reduce processing time and resource use. Apply caching at necessary layers of the delivery stack, including application, server, and edge caching where applicable. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.",
 							"resources": [
 								{
 									"A complete guide to HTTP caching": "https://www.jonoalderson.com/performance/http-caching/",
 									"A Web Caching Primer": "https://www.researchgate.net/publication/2570397_A_Web_Caching_Primer",
 									"Apache Configuration: .htaccess": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Apache_Configuration_htaccess",
 									"Apache Server Configs": "https://github.com/h5bp/server-configs-apache",
-									"Back/forward cache": "https://web.dev/articles/bfcache?hl=en",
 									"Cache-Control for Civilians": "https://csswizardry.com/2019/03/cache-control-for-civilians/",
 									"Caching": "https://planetscale.com/blog/caching",
-									"Client-side storage": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage",
 									"Expires": "https://http.dev/expires",
 									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
 									"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
-									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.1 - Back-End (Reusability Caching)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-7032 - Browser Caches": "https://gr491.isit-europe.org/en/crit.php?id=2-7032-backend-the-use-of-certain-frameworks-in-particular",
 									"GR491 - 3-5015 - Cache Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-5015-frontend-the-reduction-of-the-volumes-of-exchanges",
 									"GR491 - 7-3051 - Search Utilization": "https://gr491.isit-europe.org/en/crit.php?id=7-3051-uxui-internat-search-engines-usage-in-the-service",
-									"How to Build a Low-tech Website?": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
-									"How to improve your page load time with browser caching": "https://www.debugbear.com/blog/browser-caching",
 									"How to Reduce Initial Server Response Time": "https://www.debugbear.com/blog/reduce-initial-server-response-time",
 									"Impact of New and Emerging Internet Technologies on Climate Change and Human Rights (PDF)": "https://www.law.ox.ac.uk/sites/default/files/migrated/un_human_rights_council_advisory_committee_submission_-_new_and_emerging_technologies_-_allmann_hazas.pdf",
 									"Implement caching, batching, and offline features": "https://climateproductleaders.org/playbook/design-frugally/implement-caching-batching-and-offline-features",
 									"Microsoft Azure WAF - Selecting Services": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/select-services",
 									"Microsoft Azure WAF - Server VS Client Rendering": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design#evaluate-server-side-vs-client-side-rendering",
-									"My solar-powered and self-hosted website": "https://dri.es/my-solar-powered-and-self-hosted-website",
 									"NginX Server Configs": "https://github.com/h5bp/server-configs-nginx",
-									"Resilient web design": "https://resilientwebdesign.com/",
 									"Varnish Cache": "https://wp-rocket.me/wordpress-cache/varnish-http-cache-server/"
 								}
 							]
@@ -3114,7 +3129,7 @@
 						}
 					],
 					"example": "<IfModule mod_expires.c>\r\n\tExpiresActive on\r\n\t# Default: Fallback\r\n\tExpiresDefault                                      \"access plus 1 year\"\r\n\t# Specific: Assets\r\n\tExpiresByType image\/x-icon                          \"access plus 1 week\"\r\n\tExpiresByType application\/rss+xml                   \"access plus 1 hour\"\r\n\tExpiresByType application\/json                      \"access\"\r\n<\/IfModule>",
-					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
+					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "reduce-data-transfer-with-compression",
@@ -3206,7 +3221,7 @@
 					"criteria": [
 						{
 							"title": "Error pages",
-							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content.",
+							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide enough information to support users without exposing sensitive information, internal system details, or security-sensitive details.",
 							"resources": [
 								{
 									"6 Best practices for 404 pages with killer UX": "https://uxplanet.org/6-best-practices-for-404-pages-with-killer-ux-d9305db19ad9",
@@ -3227,7 +3242,7 @@
 						},
 						{
 							"title": "Redirection",
-							"description": "Update broken and outdated links if they are no longer valid. Use redirects only when they clearly benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach.",
+							"description": "Update broken and outdated internal and external links if they are no longer valid. Use redirects only when they benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Validate redirect destinations to prevent unsafe redirects and unintended access. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach.",
 							"resources": [
 								{
 									"Avoid Multiple Page Redirects": "https://www.debugbear.com/blog/avoid-multiple-page-redirects",
@@ -3250,7 +3265,7 @@
 						}
 					],
 					"example": "ErrorDocument 404 /404.html",
-					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "Security", "UI", "Usability"]
 				},
 				{
 					"id": "avoid-maintaining-unnecessary-virtualized-environments-or-containers",
@@ -3281,7 +3296,7 @@
 							"Social Equity": "Scaling back the usage of data centers reduces the need for new facilities that may bring negative community impacts and strain national resources."
 						}
 					],
-					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
+					"tags": ["AI", "Hardware", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "use-automation-wisely",
@@ -3577,7 +3592,7 @@
 							"Social Equity": "Reducing data processing demand means communities near data centers suffer less from noise, air pollution, and water and power overconsumption."
 						}
 					],
-					"tags": ["AI", "JavaScript", "Networking", "Performance"]
+					"tags": ["AI", "JavaScript", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "use-content-delivery-networks-cdns-when-beneficial",
@@ -3703,7 +3718,7 @@
 							"Performance": "Using a CDN to locate content closer to users gives them faster access to content."
 						}
 					],
-					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
+					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "ensure-infrastructure-fits-project-requirements",
@@ -3713,7 +3728,7 @@
 					"criteria": [
 						{
 							"title": "Lowest requirements",
-							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peak loads to ensure efficient resource use.",
+							"description": "Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Favor simpler infrastructure configurations over more complex or distributed setups when availability, recovery, and security requirements allow. Provision capacity based on expected demand while continuing to meet the availability, recovery, security, and resilience requirements of the service.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP02 - Align SLAs with sustainability goals": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a3.html",
@@ -3740,7 +3755,7 @@
 							"Economic": "Avoiding overprovisioning means avoiding unnecessary costs."
 						}
 					],
-					"tags": ["E-Waste", "Hardware", "Performance"]
+					"tags": ["E-Waste", "Hardware", "Performance", "Security"]
 				},
 				{
 					"id": "store-data-according-to-the-needs-of-your-users",
@@ -4804,7 +4819,7 @@
 						},
 						{
 							"title": "Obstacle consideration",
-							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers.",
+							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers. Reducing friction or simplification of user journeys must not result in the removal or weakening of necessary security or safety measures, or the introduction or increase of security or safety risks, particularly in relation to user verification and authentication mechanisms.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
@@ -4826,7 +4841,7 @@
 							"Operations": "Avoiding creating unnecessary products or services prevents organizations from wasting time or resources on their creation and maintenance."
 						}
 					],
-					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
+					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Security", "Software"]
 				},
 				{
 					"id": "provide-a-supplier-standards-of-practice-document",
@@ -5360,7 +5375,7 @@
 						},
 						{
 							"title": "Quantum resilience",
-							"description": "Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits.",
+							"description": "Adopt post-quantum encryption where there is a clear need to protect against \"harvest now, decrypt later\" attacks and long-term data confidentiality risks. Assess the need based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Plan transitions so that cryptographic mechanisms can be updated over time while maintaining compatibility and reducing unnecessary migration impacts.Balance protection needs against resource use, processing demands, and operational complexity while meeting applicable security requirements.",
 							"resources": [
 								{
 									"China breaks RSA encryption with a quantum computer, threatening global data security": "https://www.earth.com/news/china-breaks-rsa-encryption-with-a-quantum-computer-threatening-global-data-security/",
@@ -5809,7 +5824,7 @@
 					"criteria": [
 						{
 							"title": "Plan of action",
-							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from any incident.",
+							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from incidents. Use outcomes from incidents and reviews, including identified residual risks, to improve future responses, and inform decisions around the continued operation, migration, or decommissioning of systems and services.",
 							"resources": [
 								{
 									"Disaster recovery plan": "https://www.ibm.com/docs/en/i/7.6.0?topic=system-example-disaster-recovery-plan",

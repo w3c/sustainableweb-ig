@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2026-07-03",
+	"lastModified": "2026-08-04",
 	"category": [
 		{
 			"id": "1",
@@ -2242,7 +2242,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/domain-names.html"
 				},
 				{
-					"id": "caching-resources",
+					"id": "server-side-caching",
 					"title": "Provide caching responses to optimize page reloads",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Optimize caching and support offline access](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access).",
 					"description": [
@@ -2266,7 +2266,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/caching-resources.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/server-side-caching.html"
 				},
 				{
 					"id": "offline-access",

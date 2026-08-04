@@ -56,7 +56,7 @@ Welcome to the repository for the [W3C Sustainable Web Interest Group](https://w
 ## Statistics
 
 - **71** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
-- **196** Success criteria to meet the guidelines on various aspects of sustainability.
+- **197** Success criteria to meet the guidelines on various aspects of sustainability.
 - **138** Advisory Techniques within STAR providing guidance to meet WSG success criteria.
 - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
 - **500+** pages worth of sustainability material (**100** of which exist within WSG).
@@ -82,7 +82,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Group Note Draft</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -100,12 +100,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/resources.html">WSG Resources</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/policies.html">Web Sustainability Laws and Policies</a></td>
@@ -130,12 +130,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/quickref.html">WSG Quick Reference</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-impact/impact.json">WSG Impact JSON API</a></td>
@@ -145,12 +145,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-ig/tree/main/docs/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>03 Jul 2026</td>
+			<td>04 Aug 2026</td>
 		</tr>
 	</tbody>
 </table>

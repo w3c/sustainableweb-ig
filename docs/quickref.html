@@ -175,7 +175,7 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-cross-platform-compatibility-support">Provide cross-platform compatibility support</a></legend>
 					<label><input type="checkbox"><span>Document supported devices, operating systems, and browsers, including version ranges. Review and update it regularly to reflect current releases.</span></label>
-					<label><input type="checkbox"><span>Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.</span></label>
+					<label><input type="checkbox"><span>Avoid planned obsolescence. Maintain compatibility for as long as reasonably possible while ensuring components that remain in use continue to meet security and operational requirements. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.</span></label>
 					<label><input type="checkbox"><span>Test for a wide range of user conditions, including slow, restricted or unstable connections, Virtual Private Network (<abbr title="Virtual Private Network">VPN</abbr>) use, different operating systems and browsers, and older or low-performance devices.</span></label>
 				</fieldset>
 			</form>
@@ -248,7 +248,7 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></legend>
 					<label><input type="checkbox"><span>Review dependencies regularly and remove unused libraries and frameworks. Uninstall packages that are not needed.</span></label>
-					<label><input type="checkbox"><span>Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability.</span></label>
+					<label><input type="checkbox"><span>Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations without assessing the potential security, maintenance, and lifecycle impacts.</span></label>
 					<label><input type="checkbox"><span>Keep all dependencies up to date through regular review and maintenance.</span></label>
 				</fieldset>
 				<fieldset>
@@ -259,7 +259,7 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></legend>
 					<label><input type="checkbox"><span>Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Evaluate the environmental cost of build processes, asset transformations, and external dependencies, ensuring every layer delivers genuine user value.</span></label>
-					<label><input type="checkbox"><span>Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions.</span></label>
+					<label><input type="checkbox"><span>Use the most performant and sustainable approach for your use case. Coding from scratch can often reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the security, maintenance, and lifecycle impacts have been assessed. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.</span></label>
 					<label><input type="checkbox"><span>Deliver static content in place of dynamic content wherever possible. If code generation is required, favor the efficient tools, such as Static Site Generators (<abbr title="Static Site Generators">SSGs</abbr>). Be aware that dynamic <abbr title="Content Management System">CMS</abbr>-driven content typically involves greater server-side processing and relies on bulkier libraries compared to static approaches.</span></label>
 					<label><input type="checkbox"><span>Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, are efficient, and accessible.</span></label>
 					<label><input type="checkbox"><span>Use user interface components that are lightweight, focused, and efficient, avoiding unnecessary complexity that increases resource use, environmental impact, or maintenance burden.</span></label>
@@ -274,7 +274,7 @@
 					<label><input type="checkbox"><span>Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or <abbr title="Object-Relational Mapping">ORM</abbr> code, especially for frequently accessed data.</span></label>
 					<label><input type="checkbox"><span>Retrieve data only once per request or process and reuse it locally instead of repeating database queries.</span></label>
 					<label><input type="checkbox"><span>Scope database queries to return only the fields and records that are required.</span></label>
-					<label><input type="checkbox"><span>Apply data lifecycle and governance controls such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), use of non-sensitive identifiers like <abbr title="Universally Unique Identifiers">UUIDs</abbr>, de-identification, and minimization of stored data in line with purpose limitation principles.</span></label>
+					<label><input type="checkbox"><span>Apply data lifecycle and governance controls such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), use of non-sensitive identifiers, de-identification, and minimization of stored data in line with purpose limitation principles.</span></label>
 				</fieldset>
 			</form>
 		</section>
@@ -292,7 +292,8 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a></legend>
-					<label><input type="checkbox"><span>Use caching to reduce processing time and repeated database queries, <abbr title="Application Programming Interface">API</abbr> calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered.</span></label>
+					<label><input type="checkbox"><span>Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure expected resources are being reused and behaving as expected.</span></label>
+					<label><input type="checkbox"><span>Use server-side caching to reduce processing time and resource use. Apply caching at necessary layers of the delivery stack, including application, server, and edge caching where applicable. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.</span></label>
 					<label><input type="checkbox"><span>Keep essential content and functionality available during network interruptions. Provide offline access using web platform capabilities, such as Progressive Web Applications (<abbr title="Progressive Web Applications">PWAs</abbr>), Service Workers, Web Workers, or local storage.</span></label>
 				</fieldset>
 				<fieldset>
@@ -302,8 +303,8 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links">Setup necessary error pages and redirection links</a></legend>
-					<label><input type="checkbox"><span>Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content.</span></label>
-					<label><input type="checkbox"><span>Update broken and outdated links if they are no longer valid. Use redirects only when they clearly benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Apply proportionality so engineering and maintenance costs do not outweigh performance or <abbr title="Search Engine Optimization">SEO</abbr> gains. Test redirects to prevent errors and loops, and choose the simplest effective approach</span></label>
+					<label><input type="checkbox"><span>Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide enough information to support users without exposing sensitive information, internal system details, or security-sensitive details.</span></label>
+					<label><input type="checkbox"><span>Update broken and outdated internal and external links if they are no longer valid. Use redirects only when they benefit users or preserve <abbr title="Search Engine Optimization">SEO</abbr> value, and avoid long or unnecessary redirect chains. Validate redirect destinations to prevent unsafe redirects and unintended access. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers">Avoid maintaining unnecessary virtualized environments or containers</a></legend>
@@ -340,7 +341,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-infrastructure-fits-project-requirements">Ensure infrastructure fits project requirements</a></legend>
-					<label><input type="checkbox"><span>Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peak loads to ensure efficient resource use.</span></label>
+					<label><input type="checkbox"><span>Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Favor simpler infrastructure configurations over more complex or distributed setups when availability, recovery, and security requirements allow. Provision capacity based on expected demand while continuing to meet the availability, recovery, security, and resilience requirements of the service.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></legend>
@@ -427,7 +428,7 @@
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a></legend>
 					<label><input type="checkbox"><span>Identify whether the product or service aligns with any relevant <abbr title="United Nations">U.N.</abbr> Sustainable Development Goals (<abbr title="Sustainable Development Goals">SDGs</abbr>) and, where applicable, include corresponding targets within a sustainability statement.</span></label>
 					<label><input type="checkbox"><span>Evaluate whether a product or service is needed based on desirability, feasibility, and viability.</span></label>
-					<label><input type="checkbox"><span>Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers.</span></label>
+					<label><input type="checkbox"><span>Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers. Reducing friction or simplification of user journeys must not result in the removal or weakening of necessary security or safety measures, or the introduction or increase of security or safety risks, particularly in relation to user verification and authentication mechanisms.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">Provide a supplier standards of practice document</a></legend>
@@ -463,7 +464,7 @@
 					<label><input type="checkbox"><span>Support employees in adapting to new technologies that may change or disrupt their roles or the organization's operations.</span></label>
 					<label><input type="checkbox"><span>Evaluate the need for AI and emerging or disruptive technologies before implementation to avoid unnecessary resource use. Optimize models and deployment processes for efficiency. Measure, assess, and account for their environmental impacts throughout their lifecycle. Include impacts from first-party and third-party sources, using available data or credible estimates where direct data is unavailable. Prioritize approaches that minimize negative environmental impacts.</span></label>
 					<label><input type="checkbox"><span>Ensure bots, crawlers, user agents, scrapers, artificial intelligence, and all other automated tools respect opt-out signals at the host, server, and site level. Providers must declare themselves as non-human within the user agent in the HTTP header.</span></label>
-					<label><input type="checkbox"><span>Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits.</span></label>
+					<label><input type="checkbox"><span>Adopt post-quantum encryption where there is a clear need to protect against \"harvest now, decrypt later\" attacks and long-term data confidentiality risks. Assess the need based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Plan transitions so that cryptographic mechanisms can be updated over time while maintaining compatibility and reducing unnecessary migration impacts.Balance protection needs against resource use, processing demands, and operational complexity while meeting applicable security requirements.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#adopt-responsible-financial-practices">Adopt responsible financial practices</a></legend>
@@ -500,7 +501,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan">Create a business continuity and disaster recovery plan</a></legend>
-					<label><input type="checkbox"><span>Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from any incident.</span></label>
+					<label><input type="checkbox"><span>Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from incidents. Use outcomes from incidents and reviews, including identified residual risks, to improve future responses, and inform decisions around the continued operation, migration, or decommissioning of systems and services.</span></label>
 					<label><input type="checkbox"><span>Communicate transparently with users about incidents, service issues, and any risks to data or availability.</span></label>
 				</fieldset>
 			</form>

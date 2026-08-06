@@ -1,6 +1,6 @@
 # Web Sustainability Guidelines Explainer
 
-Participate / where to discuss more: [WSG Issue tracker](https://github.com/w3c/sustainableweb-wsg/issues) / [Impact measurement issue tracker](https://github.com/w3c/sustainableweb-impact/issues) / [Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) / [\#sustainability channel on W3C Slack](https://w3ccommunity.slack.com/archives/C02JETQAQG4)
+Participate / where to discuss more: [WSG Issue tracker](https://github.com/w3c/sustainableweb-wsg/issues) / [Impact Ratings issue tracker](https://github.com/w3c/sustainableweb-impact/issues) / [Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) / [\#sustainability channel on W3C Slack](https://w3ccommunity.slack.com/archives/C02JETQAQG4)
 
 ## The problem we’re solving
 

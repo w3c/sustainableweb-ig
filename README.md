@@ -113,7 +113,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-impact">WSG Impact Measurement</a></td>
+			<td><a href="https://w3c.github.io/sustainableweb-impact">WSG Impact Ratings</a></td>
 			<td>W3C Editors Draft</td>
 			<td>26 June 2026</td>
 		</tr>
@@ -218,9 +218,9 @@ If you wish to contribute, the below methods are how our group facilitates the d
 
 #### GitHub
 
-This Interest Group primarily conducts its technical work through GitHub. We welcome contributions through issue-raising and pull requests on our publicly available repositories for our [Interest Group](https://github.com/w3c/sustainableweb-ig/), the [Web Sustainability Guidelines](https://github.com/w3c/sustainableweb-wsg/) (WSG), and our [Impact Measurement Framework](https://github.com/w3c/sustainableweb-impact/).
+This Interest Group primarily conducts its technical work through GitHub. We welcome contributions through issue-raising and pull requests on our publicly available repositories for our [Interest Group](https://github.com/w3c/sustainableweb-ig/), the [Web Sustainability Guidelines](https://github.com/w3c/sustainableweb-wsg/) (WSG), and our [Impact Ratings](https://github.com/w3c/sustainableweb-impact/).
 
-- Issue Tracker ([Interest Group](https://github.com/w3c/sustainableweb-ig/issues) / [WSG](https://github.com/w3c/sustainableweb-wsg/issues)) / [Impact Measurement](https://github.com/w3c/sustainableweb-impact/issues))
+- Issue Tracker ([Interest Group](https://github.com/w3c/sustainableweb-ig/issues) / [WSG](https://github.com/w3c/sustainableweb-wsg/issues)) / [Impact Ratings](https://github.com/w3c/sustainableweb-impact/issues))
 
 #### Feedback
 

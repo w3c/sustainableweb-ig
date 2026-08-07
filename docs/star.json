@@ -43,7 +43,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-analysis.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/impact-analysis.html"
 				},
 				{
 					"id": "external-impact",
@@ -75,7 +75,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/external-impact.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/external-impact.html"
 				},
 				{
 					"id": "audience-evaluation",
@@ -106,7 +106,7 @@
 							"expectedResults": "If #1, #2 and #3 above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/audience-evaluation.html"
 				},
 				{
 					"id": "efficient-paths",
@@ -138,7 +138,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/efficient-paths.html"
 				},
 				{
 					"id": "content-discovery",
@@ -171,7 +171,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/content-discovery.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/content-discovery.html"
 				},
 				{
 					"id": "respect-user-attention",
@@ -202,7 +202,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/respect-user-attention.html"
 				},
 				{
 					"id": "distraction-free-design",
@@ -240,7 +240,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/distraction-free-design.html"
 				},
 				{
 					"id": "remove-engagement-traps",
@@ -269,7 +269,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/remove-engagement-traps.html"
 				},
 				{
 					"id": "deceptive-design-patterns",
@@ -297,7 +297,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deceptive-design-patterns.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/deceptive-design-patterns.html"
 				},
 				{
 					"id": "analytics-and-tracking",
@@ -327,7 +327,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/analytics-and-tracking.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/analytics-and-tracking.html"
 				},
 				{
 					"id": "search-engine-optimization",
@@ -358,7 +358,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/search-engine-optimization.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/search-engine-optimization.html"
 				},
 				{
 					"id": "deliverables-reusability",
@@ -389,7 +389,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-reusability.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/deliverables-reusability.html"
 				},
 				{
 					"id": "deliverables-documentation",
@@ -425,7 +425,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-documentation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/deliverables-documentation.html"
 				},
 				{
 					"id": "deliverables-readability",
@@ -454,7 +454,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-readability.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/deliverables-readability.html"
 				},
 				{
 					"id": "design-system",
@@ -490,7 +490,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/design-system.html"
 				},
 				{
 					"id": "need-for-media",
@@ -520,7 +520,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/need-for-media.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/need-for-media.html"
 				},
 				{
 					"id": "optimized-media",
@@ -550,7 +550,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-media.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optimized-media.html"
 				},
 				{
 					"id": "lazy-loading",
@@ -589,7 +589,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/lazy-loading.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/lazy-loading.html"
 				},
 				{
 					"id": "user-controlled-media",
@@ -621,7 +621,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-controlled-media.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/user-controlled-media.html"
 				},
 				{
 					"id": "media-management-and-use",
@@ -652,10 +652,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-management-and-use.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/media-management-and-use.html"
 				},
 				{
-					"id": "avoid-overburdening",
+					"id": "avoiding-overburdening",
 					"title": "Measure and respond to high-intensity animation usage",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure animation is proportionate and easy to control](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control).",
 					"description": [
@@ -682,7 +682,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/avoid-overburdening.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/avoiding-overburdening.html"
 				},
 				{
 					"id": "control-animation",
@@ -710,7 +710,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/control-animation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/control-animation.html"
 				},
 				{
 					"id": "pre-installed-typefaces",
@@ -738,7 +738,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/pre-installed-typefaces.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/pre-installed-typefaces.html"
 				},
 				{
 					"id": "web-font-optimization",
@@ -769,10 +769,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/web-font-optimization.html"
 				},
 				{
-					"id": "printing-documents",
+					"id": "printed-documents",
 					"title": "Add a print-friendly media query or style sheet",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -800,10 +800,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/printing-documents.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/printed-documents.html"
 				},
 				{
-					"id": "optimize-documents",
+					"id": "optimized-documents",
 					"title": "Optimizing all document assets across a variety of different formats",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -830,10 +830,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-documents.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optimized-documents.html"
 				},
 				{
-					"id": "optimize-delivery",
+					"id": "optimized-delivery",
 					"title": "Provide pre-generated copies of repeat-use physical assets",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -858,7 +858,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-delivery.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optimized-delivery.html"
 				},
 				{
 					"id": "labels-and-choice",
@@ -887,7 +887,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/labels-and-choice.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/labels-and-choice.html"
 				},
 				{
 					"id": "early-user-testing",
@@ -916,7 +916,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/early-user-testing.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/early-user-testing.html"
 				},
 				{
 					"id": "ongoing-evaluation",
@@ -949,7 +949,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/ongoing-evaluation.html"
 				},
 				{
 					"id": "automated-tests",
@@ -982,7 +982,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/automated-tests.html"
 				},
 				{
 					"id": "performance-testing",
@@ -1013,7 +1013,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/performance-testing.html"
 				},
 				{
 					"id": "compatibility-documentation",
@@ -1042,7 +1042,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/compatibility-documentation.html"
 				},
 				{
 					"id": "maintaining-compatibility",
@@ -1071,7 +1071,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/maintaining-compatibility.html"
 				},
 				{
 					"id": "user-constraints",
@@ -1105,7 +1105,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/user-constraints.html"
 				}
 			]
 		},
@@ -1143,7 +1143,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-goals.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/performance-goals.html"
 				},
 				{
 					"id": "energy-intensity",
@@ -1174,7 +1174,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/energy-intensity.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/energy-intensity.html"
 				},
 				{
 					"id": "minified-code",
@@ -1205,7 +1205,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/minified-code.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/minified-code.html"
 				},
 				{
 					"id": "code-splitting",
@@ -1237,7 +1237,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/code-splitting.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/code-splitting.html"
 				},
 				{
 					"id": "remove-redundancy",
@@ -1267,7 +1267,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/remove-redundancy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/remove-redundancy.html"
 				},
 				{
 					"id": "organize-code-arrangement",
@@ -1296,7 +1296,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/organize-code-arrangement.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/organize-code-arrangement.html"
 				},
 				{
 					"id": "assess-and-reduce",
@@ -1327,7 +1327,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/assess-and-reduce.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/assess-and-reduce.html"
 				},
 				{
 					"id": "third-party-implementation",
@@ -1356,7 +1356,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-implementation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/third-party-implementation.html"
 				},
 				{
 					"id": "self-hosting",
@@ -1387,7 +1387,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/self-hosting.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/self-hosting.html"
 				},
 				{
 					"id": "third-party-preferences",
@@ -1418,7 +1418,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-preferences.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/third-party-preferences.html"
 				},
 				{
 					"id": "semantic-code",
@@ -1447,7 +1447,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/semantic-code.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/semantic-code.html"
 				},
 				{
 					"id": "optional-features",
@@ -1476,7 +1476,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optional-features.html"
 				},
 				{
 					"id": "non-standard-code",
@@ -1512,7 +1512,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/non-standard-code.html"
 				},
 				{
 					"id": "custom-code",
@@ -1541,7 +1541,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/custom-code.html"
 				},
 				{
 					"id": "asynchronous-code",
@@ -1569,7 +1569,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/asynchronous-code.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/asynchronous-code.html"
 				},
 				{
 					"id": "optimized-loading",
@@ -1597,7 +1597,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optimized-loading.html"
 				},
 				{
 					"id": "required-elements",
@@ -1627,7 +1627,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/required-elements.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/required-elements.html"
 				},
 				{
 					"id": "meta-tags",
@@ -1657,7 +1657,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/meta-tags.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/meta-tags.html"
 				},
 				{
 					"id": "structured-data",
@@ -1685,7 +1685,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/structured-data.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/structured-data.html"
 				},
 				{
 					"id": "media-and-preference-queries",
@@ -1715,7 +1715,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-and-preference-queries.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/media-and-preference-queries.html"
 				},
 				{
 					"id": "device-adaptable",
@@ -1744,7 +1744,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/device-adaptable.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/device-adaptable.html"
 				},
 				{
 					"id": "progressive-enhancement",
@@ -1774,7 +1774,7 @@
 							"expectedResults": "Expectation of the above is dependent on the task but should aim to be true unless necessary."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-enhancement.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/progressive-enhancement.html"
 				},
 				{
 					"id": "carbon-aware-design",
@@ -1802,7 +1802,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/carbon-aware-design.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/carbon-aware-design.html"
 				},
 				{
 					"id": "alternative-browsing",
@@ -1835,7 +1835,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-browsing.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/alternative-browsing.html"
 				},
 				{
 					"id": "sustainable-javascript",
@@ -1866,7 +1866,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/sustainable-javascript.html"
 				},
 				{
 					"id": "energy-relevant-apis",
@@ -1897,7 +1897,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/energy-relevant-apis.html"
 				},
 				{
 					"id": "dependency-management",
@@ -1925,7 +1925,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-management.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/dependency-management.html"
 				},
 				{
 					"id": "dependency-necessity",
@@ -1960,7 +1960,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-necessity.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/dependency-necessity.html"
 				},
 				{
 					"id": "dependency-updates",
@@ -1989,7 +1989,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-updates.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/dependency-updates.html"
 				},
 				{
 					"id": "expected-files",
@@ -2022,7 +2022,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/expected-files.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/expected-files.html"
 				},
 				{
 					"id": "beneficial-files",
@@ -2053,7 +2053,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/beneficial-files.html"
 				},
 				{
 					"id": "appropriate-implementation",
@@ -2081,7 +2081,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/appropriate-implementation.html"
 				},
 				{
 					"id": "extensions-and-plugins",
@@ -2112,7 +2112,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/extensions-and-plugins.html"
 				},
 				{
 					"id": "versioning",
@@ -2139,7 +2139,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/versioning.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/versioning.html"
 				}
 			]
 		},
@@ -2177,7 +2177,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/provider-selection.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/provider-selection.html"
 				},
 				{
 					"id": "low-carbon-electricity",
@@ -2210,7 +2210,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/low-carbon-electricity.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/low-carbon-electricity.html"
 				},
 				{
 					"id": "domain-names",
@@ -2239,7 +2239,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/domain-names.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/domain-names.html"
 				},
 				{
 					"id": "server-side-caching",
@@ -2266,7 +2266,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/server-side-caching.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/server-side-caching.html"
 				},
 				{
 					"id": "offline-access",
@@ -2297,7 +2297,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/offline-access.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/offline-access.html"
 				},
 				{
 					"id": "server-side-compression",
@@ -2326,7 +2326,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/server-side-compression.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/server-side-compression.html"
 				},
 				{
 					"id": "media-compression",
@@ -2357,7 +2357,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-compression.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/media-compression.html"
 				},
 				{
 					"id": "error-pages",
@@ -2389,7 +2389,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/error-pages.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/error-pages.html"
 				},
 				{
 					"id": "redirection",
@@ -2420,7 +2420,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/redirection.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/redirection.html"
 				},
 				{
 					"id": "suspicious-activity-management",
@@ -2451,7 +2451,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/suspicious-activity-management.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/suspicious-activity-management.html"
 				},
 				{
 					"id": "refresh-frequency",
@@ -2480,7 +2480,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/refresh-frequency.html"
 				},
 				{
 					"id": "protocol-efficiency",
@@ -2508,7 +2508,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/protocol-efficiency.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/protocol-efficiency.html"
 				},
 				{
 					"id": "global-cdns",
@@ -2540,7 +2540,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/global-cdns.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/global-cdns.html"
 				},
 				{
 					"id": "sustainability-commitment",
@@ -2570,7 +2570,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/sustainability-commitment.html"
 				},
 				{
 					"id": "inappropriate-resources",
@@ -2599,7 +2599,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/inappropriate-resources.html"
 				},
 				{
 					"id": "lifecycle-management",
@@ -2631,7 +2631,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/lifecycle-management.html"
 				},
 				{
 					"id": "optimized-logging",
@@ -2660,7 +2660,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/optimized-logging.html"
 				}
 			]
 		},
@@ -2700,7 +2700,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/public-documents.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/public-documents.html"
 				},
 				{
 					"id": "achievements-and-compliance",
@@ -2731,7 +2731,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/achievements-and-compliance.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/achievements-and-compliance.html"
 				},
 				{
 					"id": "advocate-for-sustainability",
@@ -2758,7 +2758,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/advocate-for-sustainability.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/advocate-for-sustainability.html"
 				},
 				{
 					"id": "active-participation",
@@ -2787,7 +2787,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/active-participation.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/active-participation.html"
 				},
 				{
 					"id": "competitor-impact",
@@ -2817,7 +2817,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/competitor-impact.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/competitor-impact.html"
 				},
 				{
 					"id": "web-sustainability-goals",
@@ -2849,7 +2849,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-sustainability-goals.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/web-sustainability-goals.html"
 				},
 				{
 					"id": "obtaining-verification",
@@ -2878,7 +2878,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-verification.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/obtaining-verification.html"
 				},
 				{
 					"id": "policies-and-practices",
@@ -2906,7 +2906,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/policies-and-practices.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/policies-and-practices.html"
 				},
 				{
 					"id": "impact-reports",
@@ -2936,7 +2936,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/impact-reports.html"
 				},
 				{
 					"id": "disclosure-reporting",
@@ -2963,7 +2963,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/disclosure-reporting.html"
 				},
 				{
 					"id": "management-and-maintenance",
@@ -2993,7 +2993,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/management-and-maintenance.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/management-and-maintenance.html"
 				},
 				{
 					"id": "iterative-consideration",
@@ -3023,7 +3023,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/iterative-consideration.html"
 				},
 				{
 					"id": "feature-changes",
@@ -3054,7 +3054,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/feature-changes.html"
 				},
 				{
 					"id": "sustainable-development-goals",
@@ -3081,7 +3081,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-development-goals.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/sustainable-development-goals.html"
 				},
 				{
 					"id": "vetting-potential-partners",
@@ -3112,7 +3112,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/vetting-potential-partners.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/vetting-potential-partners.html"
 				},
 				{
 					"id": "informative-partner-promotion",
@@ -3142,7 +3142,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/informative-partner-promotion.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/informative-partner-promotion.html"
 				},
 				{
 					"id": "living-wage",
@@ -3172,7 +3172,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/living-wage.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/living-wage.html"
 				},
 				{
 					"id": "employee-benefits",
@@ -3202,7 +3202,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/employee-benefits.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/employee-benefits.html"
 				},
 				{
 					"id": "data-practices",
@@ -3233,7 +3233,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-practices.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/data-practices.html"
 				},
 				{
 					"id": "data-ownership",
@@ -3260,7 +3260,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-ownership.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/data-ownership.html"
 				},
 				{
 					"id": "outdated-content",
@@ -3290,7 +3290,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/outdated-content.html"
 				},
 				{
 					"id": "ai-and-data-collection",
@@ -3320,7 +3320,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/ai-and-data-collection.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/ai-and-data-collection.html"
 				},
 				{
 					"id": "fuel-divestment",
@@ -3351,7 +3351,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/fuel-divestment.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/fuel-divestment.html"
 				},
 				{
 					"id": "philanthropy-policy",
@@ -3381,7 +3381,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/philanthropy-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/philanthropy-policy.html"
 				},
 				{
 					"id": "environmental-budget",
@@ -3410,7 +3410,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/environmental-budget.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/environmental-budget.html"
 				},
 				{
 					"id": "performance-budget",
@@ -3439,7 +3439,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-budget.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/performance-budget.html"
 				},
 				{
 					"id": "measurable-improvements",
@@ -3471,7 +3471,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/measurable-improvements.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/measurable-improvements.html"
 				},
 				{
 					"id": "open-source-governance",
@@ -3500,7 +3500,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-governance.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/open-source-governance.html"
 				},
 				{
 					"id": "collaboration-and-contribution",
@@ -3529,7 +3529,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/collaboration-and-contribution.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/collaboration-and-contribution.html"
 				},
 				{
 					"id": "audience-awareness",
@@ -3558,7 +3558,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/audience-awareness.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-ig/docs/test-suite/audience-awareness.html"
 				}
 			]
 		}

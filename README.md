@@ -85,7 +85,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.w3.org/TR/WSG-IR/">WSG Impact Ratings</a></td>
+			<td><a href="https://www.w3.org/TR/wsg-ir/">WSG Impact Ratings</a></td>
 			<td>W3C Group Note Draft</td>
 			<td>11 Aug 2026</td>
 		</tr>

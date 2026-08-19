@@ -84,6 +84,11 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>W3C Group Note Draft</td>
 			<td>03 Jul 2026</td>
 		</tr>
+		<tr>
+			<td><a href="https://www.w3.org/TR/wsg-ir/">WSG Impact Ratings</a></td>
+			<td>W3C Group Note Draft</td>
+			<td>11 Aug 2026</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -111,11 +116,6 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
 			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-impact">WSG Impact Ratings</a></td>
-			<td>W3C Editors Draft</td>
-			<td>26 June 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/benefits.html">WSG Benefits</a></td>

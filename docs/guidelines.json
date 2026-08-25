@@ -2431,7 +2431,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations without assessing the potential security, maintenance, and lifecycle impacts.",
+							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -2581,7 +2581,7 @@
 						},
 						{
 							"title": "Optimized methodology",
-							"description": "Use the most performant and sustainable approach for your use case. Coding from scratch can often reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the security, maintenance, and lifecycle impacts have been assessed. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.",
+							"description": "Coding from scratch can reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2687,7 +2687,7 @@
 						},
 						{
 							"title": "Language choice",
-							"description": "Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the wellbeing of those involved or become cost-prohibitive.",
+							"description": "Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the well-being of those involved or become cost-prohibitive.",
 							"resources": [
 								{
 									"Best PHP Performance Tips From Community & Influencers": "https://www.cloudways.com/blog/php-performance/",
@@ -3036,7 +3036,7 @@
 					"criteria": [
 						{
 							"title": "Client-side caching",
-							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure expected resources are being reused and behaving as expected.",
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behaviour using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes.",
 							"resources": [
 								{
 									"A Web Caching Primer": "https://www.researchgate.net/publication/2570397_A_Web_Caching_Primer",
@@ -3058,7 +3058,7 @@
 						},
 						{
 							"title": "Server-side caching",
-							"description": "Use server-side caching to reduce processing time and resource use. Apply caching at necessary layers of the delivery stack, including application, server, and edge caching where applicable. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.",
+							"description": "Use server-side caching to reduce processing time and resource use. Apply caching at delivery-stack layers where it provides a clear benefit, balancing performance gains against the overhead and complexity of maintaining cached content. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.",
 							"resources": [
 								{
 									"A complete guide to HTTP caching": "https://www.jonoalderson.com/performance/http-caching/",
@@ -3221,7 +3221,7 @@
 					"criteria": [
 						{
 							"title": "Error pages",
-							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide enough information to support users without exposing sensitive information, internal system details, or security-sensitive details.",
+							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide only the information necessary to support users without exposing sensitive information, internal system details, or security-sensitive details.",
 							"resources": [
 								{
 									"6 Best practices for 404 pages with killer UX": "https://uxplanet.org/6-best-practices-for-404-pages-with-killer-ux-d9305db19ad9",
@@ -3728,7 +3728,7 @@
 					"criteria": [
 						{
 							"title": "Lowest requirements",
-							"description": "Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Favor simpler infrastructure configurations over more complex or distributed setups when availability, recovery, and security requirements allow. Provision capacity based on expected demand while continuing to meet the availability, recovery, security, and resilience requirements of the service.",
+							"description": "Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Provision capacity based on expected demand, with allowances for exceptional and hostile demand, while simultaneously ensuring all availability, recovery, security, and resilience requirements can be met.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP02 - Align SLAs with sustainability goals": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a3.html",
@@ -4819,7 +4819,7 @@
 						},
 						{
 							"title": "Obstacle consideration",
-							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers. Reducing friction or simplification of user journeys must not result in the removal or weakening of necessary security or safety measures, or the introduction or increase of security or safety risks, particularly in relation to user verification and authentication mechanisms.",
+							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers, without weakening necessary security, safety, or authentication measures.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
@@ -4942,7 +4942,7 @@
 							]
 						},
 						{
-							"title": "Incentivisation",
+							"title": "Incentivization",
 							"description": "Embed incentives for affected parties such as workers and contractors into organizational practices to support impact goals, underpinned by clear policies that guide how incentives are designed and applied.",
 							"resources": [
 								{
@@ -5375,7 +5375,7 @@
 						},
 						{
 							"title": "Quantum resilience",
-							"description": "Adopt post-quantum encryption where there is a clear need to protect against \"harvest now, decrypt later\" attacks and long-term data confidentiality risks. Assess the need based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Plan transitions so that cryptographic mechanisms can be updated over time while maintaining compatibility and reducing unnecessary migration impacts.Balance protection needs against resource use, processing demands, and operational complexity while meeting applicable security requirements.",
+							"description": "Assess the need for post-quantum cryptography based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum cryptography in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits. Balance these considerations against the security benefits of post-quantum cryptography",
 							"resources": [
 								{
 									"China breaks RSA encryption with a quantum computer, threatening global data security": "https://www.earth.com/news/china-breaks-rsa-encryption-with-a-quantum-computer-threatening-global-data-security/",
@@ -5698,7 +5698,7 @@
 						},
 						{
 							"title": "Human budget",
-							"description": "Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, wellbeing, and sustainable workloads.",
+							"description": "Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, well-being, and sustainable workloads.",
 							"resources": [
 								{
 									"7 Ways To Reduce Burnout In Your Tech Teams": "https://www.hackerearth.com/blog/reduce-workplace-burnout",

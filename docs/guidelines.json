@@ -119,7 +119,7 @@
 							"Accessibility": "Understanding the needs of your audience through accessibility and trauma-informed research will help you prioritize design improvements to boost accessibility beyond the basics.",
 							"Conversion": "Meeting audience requirements increases the likelihood that they will use it regularly and recommend it to others, improving its adoption rate and reputation.",
 							"Economic": "Responding to the needs of your audience means they are more likely to convert and purchase.",
-							"Environment": "Undertaking research to identify real user needs and behaviour means developers can avoid wasting time, effort, and emissions on building unnecessary features.",
+							"Environment": "Undertaking research to identify real user needs and behavior means developers can avoid wasting time, effort, and emissions on building unnecessary features.",
 							"Performance": "Use user research to identify UX bottlenecks that cause user abandonment. Fixes can be measured, tested, and evaluated to further improve performance and reduce emissions through removing those bottlenecks and inefficiencies.",
 							"Privacy": "Assessing user needs and being minimal with further information requests will help you comply with privacy legislation.",
 							"Social Equity": "Improving UX with compatibility in mind means products or services work better for users who might otherwise face various barriers to accessing content - such as older devices, low-bandwidth environments, or restrictive territories, language, while being considerate of localizability and adapting to cultural norms. This reduces e-waste and improves equity if older equipment meets needs for longer."
@@ -3036,7 +3036,7 @@
 					"criteria": [
 						{
 							"title": "Client-side caching",
-							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behaviour using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes.",
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes.",
 							"resources": [
 								{
 									"A Web Caching Primer": "https://www.researchgate.net/publication/2570397_A_Web_Caching_Primer",

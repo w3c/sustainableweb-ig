@@ -24,7 +24,7 @@
 - [Web Sustainability Index](https://websustainabilityindex.com/about) - Tooling for measurement that is based upon the WSGs.
 - [WSG Check](https://wsg-check.netlify.app/) - A lightweight, open source WSG scanner that can identify issues.
 - [WSG Facts](https://wsg-facts.com/) - Statistics about the Sustainable Web Interest Group and WSG.
-- WSG-O-Matic [1](https://wsg-o-matic.com/) [2](https://www.morganwebdev.org/posts/wsg-o-matic/) - Provides a random guideline for you to tackle, one at a time.
+- WSG-O-Matic [[1](https://wsg-o-matic.com/) [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
 - [WSG Report and Statement Tool](https://websitesustainability.com/wsg-report/) - Creates reports equivalent to WCAG-EM tool.
 
 ## Works
@@ -129,7 +129,7 @@ Edinburgh University [[1](https://blogs.ed.ac.uk/website-communications/digital-
 Liip [[1](https://www.liip.ch/en/sustainability), [2](https://www.liip.ch/en/services/strategy/digital-responsibility)], 
 [LifeCenteredDesign](https://lifecentred.design/low-carbon-ux-design-course/#1759317421973-328a1b21-9948), 
 [Lime Soda](https://www.limesoda.com/leistungen/beratung-consulting/nachhaltiges-webdesign), 
-ManyFold [1](https://manyfold.app/news/2024/07/12/wsg-assessment.html), [2](https://floppy.org.uk/), 
+ManyFold [[1](https://manyfold.app/news/2024/07/12/wsg-assessment.html), [2](https://floppy.org.uk/)], 
 [Mightybytes](https://www.mightybytes.com/case-studies/sustainable-website-redesign/), 
 [NHS](https://service-manual.nhs.uk/standards-and-technology/service-standard-points/11-choose-the-right-tools-and-technology), 
 NTNU [[1](https://www.ntnu.edu/excited/sustainability-in-computing-education), [2](https://www.ntnu.edu/excited/examples-of-sustainability-analysis-of-master/bachelor-thesis)]
@@ -166,7 +166,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Alan W Smith](https://www.alanwsmith.com/en/33/0p/hp/mj/?thoughts-on-web-specs-and-docs), 
 	[Alessandro Maggioni](https://alessandromaggioni.it/manutenzione-evolutiva-sicurezza-web-professionale/), 
 	[AllConsultingFirms](https://www.allconsultingfirms.com/blog/ultimate-guide-interaction-design-strategies/), 
-	Andy Blum ([1](https://andy-blum.com/articles/web-sustainability-guidelines/), [2](https://www.thedroptimes.com/34405/web-sustainability-guidelines-10-promoting-eco-friendly-digital-practices)), 
+	Andy Blum [[1](https://andy-blum.com/articles/web-sustainability-guidelines/), [2](https://www.thedroptimes.com/34405/web-sustainability-guidelines-10-promoting-eco-friendly-digital-practices)], 
 	[APIDots](https://apidots.com/blog/ux-design-trends-2026/), 
 	[AppMaster](https://appmaster.io/news/w3c-introduces-web-sustainability-guidelines), 
 	[AppYuser](https://www.appyuser.com/blog/le-site-remarche-sur-mon-vieux-telephone-en-3g/), 

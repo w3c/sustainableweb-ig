@@ -75,7 +75,6 @@
 - Proceedings of the FIREtalk Conference - Research on FIRE! [[Source](https://espace.coop/fr/boutique/categories/sante-medecine-13666/proceedings-of-the-firetalk-conference---research-on-fire-research-on-fire-2025-5780028)]
 - Progettare ecosistemi educativi ispirati alla natura. La piattaforma Canòpia per le scuole [[Source](https://amslaurea.unibo.it/id/eprint/37420/)]
 - Regrowing a greener web [[Source](https://nva.sikt.no/registration/0199291de84c-ababa6a2-b3be-4c81-965c-0b5c089570a4)]
-- Review of Web Analytic tools for eco-conception [[Source](https://www.techrxiv.org/doi/full/10.36227/techrxiv.170259059.92136685/v1)]
 - Reducing Emissions, Enhancing Experience: The Impact of Sustainable Web Design in UX [[Source](https://ju.diva-portal.org/smash/record.jsf?dswid=4487)]
 - Review of Web Analytic tools for eco-conception [[Source](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.170259059.92136685/v1)]
 - The Role of User Experience Design in Advancing Digital Sustainability [[Source](https://www.ijsr.net/getabstract.php?paperid=SR251021070714)]

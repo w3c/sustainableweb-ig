@@ -24,7 +24,7 @@
 - [Web Sustainability Index](https://websustainabilityindex.com/about) - Tooling for measurement that is based upon the WSGs.
 - [WSG Check](https://wsg-check.netlify.app/) - A lightweight, open source WSG scanner that can identify issues.
 - [WSG Facts](https://wsg-facts.com/) - Statistics about the Sustainable Web Interest Group and WSG.
-- WSG-O-Matic [[1](https://wsg-o-matic.com/) [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
+- WSG-O-Matic [[1](https://wsg-o-matic.com/), [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
 - [WSG Report and Statement Tool](https://websitesustainability.com/wsg-report/) - Creates reports equivalent to WCAG-EM tool.
 
 ## Works

@@ -27,7 +27,7 @@
 - WSG-O-Matic [[1](https://wsg-o-matic.com/), [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
 - [WSG Report and Statement Tool](https://websitesustainability.com/wsg-report/) - Creates reports equivalent to WCAG-EM tool.
 
-## Books, Etc
+## Books, Reports, etc
 
 - Building the Sustainable Web [[Source](https://link.springer.com/book/10.1007/979-8-8688-2521-7)]
 - Further Aligning W3C's Program of Technical Work with Human Rights [[Source](https://www.w3.org/TR/furthering-human-rights/)]

@@ -27,9 +27,10 @@
 - WSG-O-Matic [[1](https://wsg-o-matic.com/), [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
 - [WSG Report and Statement Tool](https://websitesustainability.com/wsg-report/) - Creates reports equivalent to WCAG-EM tool.
 
-## Books / Specifications
+## Books / Etc
 
 - Building the Sustainable Web [[Source](https://link.springer.com/book/10.1007/979-8-8688-2521-7)]
+- Further Aligning W3C's Program of Technical Work with Human Rights [[Source](https://www.w3.org/TR/furthering-human-rights/)]
 - GSF SCI for Web [[Source](https://greensoftware.foundation/standards/sci-web/), [Report](https://greensoftware.foundation/policy/research/sci-web-assembly-report/), [Details](https://greensoftware.foundation/articles/designing-sci-web-what-we-agreed-and-what-comes-next/), [Post](https://greensoftware.foundation/articles/the-green-software-foundation-and-world-wide-web-consortium-w3c-collaborate-to-ad/)]
 - User Experience Design und Sustainability [[Source](https://link.springer.com/book/10.1007/978-3-658-45048-9)]
 
@@ -397,7 +398,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Vived](https://vived.io/is-there-a-greenest-jvm-spoiler-as-usual-it-depends-jvm-weekly-vol-170/), 
 	[Vivian Voss](https://vivianvoss.net/blog/why-we-render-everything-in-the-browser)
 - **W:**
-	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [4](https://www.w3.org/TR/furthering-human-rights/), [5](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/)]
+	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [4](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/)]
 	[Waveland Web](https://wavelandweb.com/blog/normalizing-web-sustainability/), 
 	[We Made This](https://wemadethis.co.uk/blog/2024/01/sustainable-graphic-design/), 
 	[Web Performance Calendar](https://calendar.perfplanet.com/2023/why-web-perf-tools-should-be-reporting-website-carbon-emissions/), 

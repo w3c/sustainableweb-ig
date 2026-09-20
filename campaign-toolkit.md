@@ -27,7 +27,7 @@
 - WSG-O-Matic [[1](https://wsg-o-matic.com/), [2](https://www.morganwebdev.org/posts/wsg-o-matic/)] - Provides a random guideline for you to tackle, one at a time.
 - [WSG Report and Statement Tool](https://websitesustainability.com/wsg-report/) - Creates reports equivalent to WCAG-EM tool.
 
-## Works
+## Books / Specifications
 
 - Building the Sustainable Web [[Source](https://link.springer.com/book/10.1007/979-8-8688-2521-7)]
 - GSF SCI for Web [[Source](https://greensoftware.foundation/standards/sci-web/), [Report](https://greensoftware.foundation/policy/research/sci-web-assembly-report/), [Details](https://greensoftware.foundation/articles/designing-sci-web-what-we-agreed-and-what-comes-next/), [Post](https://greensoftware.foundation/articles/the-green-software-foundation-and-world-wide-web-consortium-w3c-collaborate-to-ad/)]

@@ -133,7 +133,7 @@ Liip [[1](https://www.liip.ch/en/sustainability), [2](https://www.liip.ch/en/ser
 ManyFold [[1](https://manyfold.app/news/2024/07/12/wsg-assessment.html), [2](https://floppy.org.uk/)], 
 [Mightybytes](https://www.mightybytes.com/case-studies/sustainable-website-redesign/), 
 [NHS](https://service-manual.nhs.uk/standards-and-technology/service-standard-points/11-choose-the-right-tools-and-technology), 
-NTNU [[1](https://www.ntnu.edu/excited/sustainability-in-computing-education), [2](https://www.ntnu.edu/excited/examples-of-sustainability-analysis-of-master/bachelor-thesis)]
+NTNU [[1](https://www.ntnu.edu/excited/sustainability-in-computing-education), [2](https://www.ntnu.edu/excited/examples-of-sustainability-analysis-of-master/bachelor-thesis)], 
 [OnePointFive](https://www.opf.degree/insights/deep-dive-how-digital-and-ai-activities-create-real-world-emissions-and-how-opf-accounts-for-them), 
 Oynk [[1](https://oynk.co.uk/), [2](https://oynk.co.uk/sustainable-web-design/), [3](https://oynk.co.uk/services/wsg-compliance/)], 
 Pixel Fridge [[1](https://media.pixelfridge.digital/uploads/2024/07/sustainability_checklist_V1-PixelFridge.pdf), [2](https://res.cloudinary.com/pixelfridge/images/v1742307909/uploads/pixelfridge-sustainabilitychecklist/pixelfridge-sustainabilitychecklist.pdf?_i=AA)], 
@@ -189,7 +189,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Blushush](https://www.blushush.co.uk/blogs/ux-design-trends-2026-what-leading-ux-design-agencies-are-doing-differently), 
 	[Booknet Canada](https://booknetcanada.ca/blog/2026/02/26/smuggling-green-and-inclusive-tech-past-the-gatekeepers/), 
 	[Brainiac Media](https://www.brainiacmedia.net/blogs/sustainable-web-design-principles-digital-success/), 
-	Branch [[1](https://branch.climateaction.tech/issues/issue-8/the-perfect-site-doesnt-exist/), [2](https://branch.climateaction.tech/issues/issue-8/what-can-digital-sustainability-learn-from-accessibility/). [3](https://branch.climateaction.tech/issues/issue-9/reimagining-the-browser-for-a-green-web/), [4](https://branch.climateaction.tech/issues/issue-9/pause-building-awareness-and-agency-into-the-grid-aware-web/)], 
+	Branch [[1](https://branch.climateaction.tech/issues/issue-8/the-perfect-site-doesnt-exist/), [2](https://branch.climateaction.tech/issues/issue-8/what-can-digital-sustainability-learn-from-accessibility/), [3](https://branch.climateaction.tech/issues/issue-9/reimagining-the-browser-for-a-green-web/), [4](https://branch.climateaction.tech/issues/issue-9/pause-building-awareness-and-agency-into-the-grid-aware-web/)], 
 	[Burnworks](https://burnworks.com/news/article/461/), 
 	[By Intention](https://byintention.co/web-sustainability-guidelines-report-w3c-community/)
 - **C:**
@@ -234,10 +234,10 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[EcoWebLab](https://biz4sis.com/ecoweblab-artykul-ekspercki-beata-karpinska/), 
 	[Ekino](https://www.ekino.fr/publications/vers-un-numerique-durable-progres-et-sobriete/), 
 	[Electro Strategy](https://www.electro-strategy.co/articles/links), 
-	The Ethical Agency [[1](https://ethical-agency.com/sustainable-website-optimization-reducing-digital-carbon-footprints-in-2026/), [2](https://ethical-agency.com/website-carbon-footprint-the-strategic-guide-for-sustainable-brands-in-2026/)]
+	The Ethical Agency [[1](https://ethical-agency.com/sustainable-website-optimization-reducing-digital-carbon-footprints-in-2026/), [2](https://ethical-agency.com/website-carbon-footprint-the-strategic-guide-for-sustainable-brands-in-2026/)], 
 	[Extra Mile Digital](https://www.extramiledigital.com/news/web-sustainability-guidelines-what-they-mean-for-your-b2b-website/)
 - **F:**
-	Fastly [[1](https://www.fastly.com/blog/5-tips-for-creating-speedier-more-sustainable-websites-with-fastly), [2](https://www.fastly.com/blog/tips-for-developers-for-using-sustainability-dashboard)]
+	Fastly [[1](https://www.fastly.com/blog/5-tips-for-creating-speedier-more-sustainable-websites-with-fastly), [2](https://www.fastly.com/blog/tips-for-developers-for-using-sustainability-dashboard)], 
 	[FelixOnline](https://felixonline.co.uk/articles/sustainability-in-a-digital-world/), 
 	Fershad Irani [[1](https://fershad.com/notes/what-is-the-goal-wsg/), [2](https://fershad.com/notes/organising-wsg/), [3](https://fershad.com/writing/wsg-impact-framework/), [4](https://fershad.com/writing/nobody-cares/)], 
 	[Fiona MacNeill](https://macknowlogist.co.uk/blog/2026/01/sustainableworkshop/), 
@@ -252,7 +252,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[GSF](https://greensoftware.foundation/articles/revisiting-green-software-from-silicon-to-screen/), 
 	GWF [[1](https://www.thegreenwebfoundation.org/news/creating-a-standard-for-measuring-software-carbon-intensity-for-the-web/), [2](https://www.thegreenwebfoundation.org/news/an-update-on-sci-for-web-a-new-standard-for-measuring-software-carbon-intensity-for-the-web/), [3](https://www.thegreenwebfoundation.org/news/a-july-sci-for-web-update-defining-a-new-standard-for-carbon-measurement-in-web-applications/)]
 - **H:**
-	[Habr](https://habr.com/ru/companies/sberbank/articles/1003044/)
+	[Habr](https://habr.com/ru/companies/sberbank/articles/1003044/), 
 	[HackMD](https://hackmd.io/@h8Wc2RnARLypUKWR8Znxig/SJFarDP8p), 
 	[Harvey Banham](https://harveybanham.com/writing/why-you-should-choose-composable-architecture), 
 	[HdK](https://wearehdk.com/insights/from-zero-to-hero-how-we-improved-our-website-carbon-rating-from-a-d-to-an-a/), 
@@ -314,11 +314,11 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Marko Heine](https://marcoheine.com/blog/web-sustainability-guidelines), 
 	[Mayli Munkebye](https://blogg.sikt.no/workshop-beslutningstreet-for-b%C3%A6rekraftig-produktutvilking-e72ef2844674), 
 	[MDN](https://developer.mozilla.org/en-US/blog/introduction-to-web-sustainability/), 
-	Mightybytes [[1](https://www.mightybytes.com/insights/web-sustainability-guidelines/), [2](https://www.mightybytes.com/insights/sustainable-web-design/), [3](https://www.mightybytes.com/insights/how-to-find-an-ethical-marketing-agency/)]
+	Mightybytes [[1](https://www.mightybytes.com/insights/web-sustainability-guidelines/), [2](https://www.mightybytes.com/insights/sustainable-web-design/), [3](https://www.mightybytes.com/insights/how-to-find-an-ethical-marketing-agency/)], 
 	[Mike Gifford](https://blog.civicactions.com/advancing-the-open-web-irl-global-standards-at-w3c-tpac-2025-d39f8f7c8408), 
 	[Minimal Carbon](https://minimalcarbon.net/links/), 
-	Mitsue-Links [[1](https://www.mitsue.co.jp/knowledge/blog/frontend/202309/11_1031.html), [2](https://www.mitsue.co.jp/seminar/wsg.html)]
-	Morgan Murrah [1](https://www.morganwebdev.org/posts/wsg/), [2](https://www.morganwebdev.org/posts/people-planet-prosperity/), 
+	Mitsue-Links [[1](https://www.mitsue.co.jp/knowledge/blog/frontend/202309/11_1031.html), [2](https://www.mitsue.co.jp/seminar/wsg.html)], 
+	Morgan Murrah [[1](https://www.morganwebdev.org/posts/wsg/), [2](https://www.morganwebdev.org/posts/people-planet-prosperity/)], 
 	[Munkun](https://munkun.com/blog/reverdecer-internet/)
 - **N:**
 	[NameOcean](https://nameocean.net/article/building-a-greener-web-why-sustainability-guidelines-matter-for-your-next-project/), 
@@ -365,7 +365,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Sopra Setria](https://www.soprasteria.it/digital_digest_blog/article2/sostenibilita-digitale-digital-sustainability-officer), 
 	[Solve](https://solve.co.uk/ethical-business/benefits-of-sustainable-web-design/), 
 	[Sparkbird Works](https://www.sparkbird.works/resources), 
-	Sparkbox [[1](https://sparkbox.com/foundry/looking_ahead_to_2024) [2](https://sparkbox.com/foundry/web_sustainability_navigating_the_path_to_an_eco-conscious_internet)], 
+	Sparkbox [[1](https://sparkbox.com/foundry/looking_ahead_to_2024), [2](https://sparkbox.com/foundry/web_sustainability_navigating_the_path_to_an_eco-conscious_internet)], 
 	[Stolperfrei](https://stolperfrei.digital/barrierefreie-nachhaltige-webentwicklung/), 
 	[Strat4](https://strat4.co.uk/insights/green-seo-sustainable-digital-strategies), 
 	Studio 24 [[1](https://www.studio24.net/blog/everyday-digital-sustainability/), [2](https://www.studio24.net/blog/the-future-of-wordpress/)], 
@@ -398,7 +398,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Vived](https://vived.io/is-there-a-greenest-jvm-spoiler-as-usual-it-depends-jvm-weekly-vol-170/), 
 	[Vivian Voss](https://vivianvoss.net/blog/why-we-render-everything-in-the-browser)
 - **W:**
-	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [4](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/)]
+	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [4](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/)], 
 	[Waveland Web](https://wavelandweb.com/blog/normalizing-web-sustainability/), 
 	[We Made This](https://wemadethis.co.uk/blog/2024/01/sustainable-graphic-design/), 
 	[Web Performance Calendar](https://calendar.perfplanet.com/2023/why-web-perf-tools-should-be-reporting-website-carbon-emissions/), 

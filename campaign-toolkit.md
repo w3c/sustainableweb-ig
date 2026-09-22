@@ -51,6 +51,7 @@
 - Docs-as-Care: Documentation as an Expression of Care and Stewardship in Organizational Practice [[Source](https://www.tandfonline.com/doi/abs/10.1080/01930826.2026.2641491)]
 - Du Low Code au Green Code : concepts, méthodes et outils [[Source](https://hal.science/tel-05140875/)]
 - EcoAssist: Embedding Sustainability into AI-Assisted Frontend Development [[Source](https://arxiv.org/abs/2604.04332), [Article](https://hcii.cmu.edu/news/ecoassist-sustainable-ai-coding)]
+- Екодизайн програмного забезпечення: від вимог до експлуатації [[Source](https://ict.od.ua/index.php/journal/uk/article/view/54/46)]
 - Empfehlungen für UX Design for Sustainability [[Source](https://link.springer.com/chapter/10.1007/978-3-658-45048-9_3)]
 - Entwicklung eines Werkzeugs zur Reduzierung des Energieverbrauchs von Websites durch statische Code-Analyse [[Source](https://reposit.haw-hamburg.de/handle/20.500.12738/17664)]
 - Environmental Sustainability Perceptions of Machine Learning Practitioners [[Source](https://dl.acm.org/doi/10.1145/3715275.3732088)]
@@ -137,6 +138,7 @@ NTNU [[1](https://www.ntnu.edu/excited/sustainability-in-computing-education), [
 Oynk [[1](https://oynk.co.uk/), [2](https://oynk.co.uk/sustainable-web-design/), [3](https://oynk.co.uk/services/wsg-compliance/)], 
 Pixel Fridge [[1](https://media.pixelfridge.digital/uploads/2024/07/sustainability_checklist_V1-PixelFridge.pdf), [2](https://res.cloudinary.com/pixelfridge/images/v1742307909/uploads/pixelfridge-sustainabilitychecklist/pixelfridge-sustainabilitychecklist.pdf?_i=AA)], 
 [Sober](https://soberstudio.dev/), 
+Studio 24 [[1](https://www.studio24.net/services/sustainability/), [2](https://www.studio24.net/blog/everyday-digital-sustainability/), [3](https://www.studio24.net/blog/the-future-of-wordpress/)], 
 [Supercool](https://supercooldesign.co.uk/articles/supercools-sustainability-action-plan-2025), 
 [Sustainable Screens Scotland](https://sustainablescreens.org/about-the-project/), 
 [Team Neusta](https://deployed-blog.de/nachhaltiges-ux-design-wie-wir-digitale-produkte-verantwortungsvoll-gestalten/), 
@@ -182,8 +184,10 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[BBC R&D](https://www.bbc.co.uk/rd/articles/2025-01-sustainability-web-energy-consumption), 
 	[bbioonThemes](https://bbioon.com/blog/how-to-master-minimize-environmental-impact-hacks-fast), 
 	[Beach](https://www.beachmarketing.co.uk/green-websites-reducing-the-internets-carbon-footprint/), 
+	[Behnosh Najafi](https://medium.com/design-bootcamp/crafting-a-sustainable-future-the-role-of-designers-in-building-responsible-products-and-services-a14aaff4ea0e), 
 	[Bejamas](https://bejamas.com/insights/operations/sustainable-web-design-why-and-how-to-create-a-sustainable-website), 
 	[BenWeb](https://benweb.ca/conseils/eco-conception-web-arbre-plante/), 
+	[Big Mouth](https://bigmouthcreative.com/2026/09/15/your-website-is-hurting-the-planet-heres-how-to-fix-it/), 
 	[BitMAT Edizioni](https://www.bitmat.it/tecnologie/sostenibilita/web-sostenibile-come-ridurre-linquinamento-della-navigazione-online/), 
 	[Blushush](https://www.blushush.co.uk/blogs/ux-design-trends-2026-what-leading-ux-design-agencies-are-doing-differently), 
 	[Booknet Canada](https://booknetcanada.ca/blog/2026/02/26/smuggling-green-and-inclusive-tech-past-the-gatekeepers/), 
@@ -224,6 +228,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[DigitalThrive](https://digitalthriveai.com/en-au/resources/docs/web-design/introduction-to-web-sustainability/), 
 	[Distributed Digital](https://distributedigital.co.uk/sustainability-in-digital-marketing-strategies-for-a-greener-future/), 
 	[Drezner Digital](https://dreznerdigital.com/services/sustainability/), 
+	[The Drop Times](https://www.thedroptimes.com/71835/w3c-web-sustainability-impact-ratings), 
 	Drupal [[1](https://www.drupal.org/about/sustainability), [2](https://www.drupal.org/docs/getting-started/sustainability/getting-started-with-sustainability)], 
 	[Dubbot](https://dubbot.com/dubblog/2025/wcag-and-sustainable-web-design-working-together-to-save-the-planet.html), 
 	[DZGND.studio](https://dzgnd.studio/digital/ux-experiences-utilisateur-conception-site-internet.htm)
@@ -272,6 +277,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Imperial College London](https://www.imperial.ac.uk/staff/tools-and-reference/web-guide/training-and-events/materials/accessibility/sustainability-guidelines/), 
 	[IndieWebCamp](https://indieweb.org/2025/Berlin/sustainableweb), 
 	[Informatik Aktuell](https://www.informatik-aktuell.de/management-und-recht/digitalisierung/green-software-development-in-der-praxis.html), 
+	[Intention](https://byintention.co/sustainable-design/), 
 	[Internet Society](https://www.internetsociety.org/blog/2024/04/the-internet-and-climate-change/), 
 	[Invoke Media](https://invokemedia.co.uk/sustainable-website-design-choices-that-improve-speed-and-user-experience), 
 	[ISSOH](https://www.issoh.co.jp/column/details/7755/), 
@@ -300,6 +306,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Lallanmedia](https://lallanmedia.in/it-sustainability-assume-tank-how-it-sustainability-entered-the-mandate-period-throughout-2025/), 
 	[Liechtenstein](https://liechtenecker.at/blog/ui-trends-2024/), 
 	[Light bulb](https://www.lightbulbwebdesign.co.uk/website-design-blog/entry/expert-web-design-strategies-for-digital-sustainability), 
+	[Lightly Salted](https://lightlysalted.agency/sustainable-web-design-2026-guide-uk/), 
 	[Lisa Vorobeva](https://uxdesign.cc/content-design-practices-for-sustainable-communication-in-tech-cbfc679be0cc), 
 	loftwork [[1](https://loftwork.com/jp/project/nsri-sustainable-web), [2](https://loftwork.com/jp/finding/energy_design_01)], 
 	[London Ruby Users Group](https://lrug.org/meetings/2025/june/), 
@@ -347,6 +354,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Reindeer](https://tech.reyndeer.com/articles/building-sustainable-websites/), 
 	[Rickety Roo](https://ricketyroo.com/blog/sustainable-web-design/), 
 	[RinenWeb](https://www.rinenweb.eu/blog/viosimi-anaptyksi-istotopon-kai-efarmogon-kai-pos-na-tin-petyxeis), 
+	[Root](https://rootwebdesign.studio/beneath-the-surface/7-celebrating-progress-in-the-sustainable-web-design-community/), 
 	[Rose Newell](https://codewordcreative.com/blog/diy-website/), 
 	Rosenfeld Media [[1](https://medium.com/rosenfeld-media-climate-ux/decarbonising-user-journeys-how-minimizing-enables-us-to-do-more-with-less-2e72d200bdcb), [2](https://medium.com/rosenfeld-media-climate-ux/climate-ux-case-study-the-journey-of-building-a-sustainable-design-practice-1a271c0de97c)]
 - **S:**
@@ -367,7 +375,6 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	Sparkbox [[1](https://sparkbox.com/foundry/looking_ahead_to_2024), [2](https://sparkbox.com/foundry/web_sustainability_navigating_the_path_to_an_eco-conscious_internet)], 
 	[Stolperfrei](https://stolperfrei.digital/barrierefreie-nachhaltige-webentwicklung/), 
 	[Strat4](https://strat4.co.uk/insights/green-seo-sustainable-digital-strategies), 
-	Studio 24 [[1](https://www.studio24.net/blog/everyday-digital-sustainability/), [2](https://www.studio24.net/blog/the-future-of-wordpress/)], 
 	[Studio A Table](https://www.studioatable.fr/visibilite-site-internet-gers-toulouse/), 
 	[Studio Seventeen](https://www.studioseventeen.co.uk/how-to-incorporate-wsg-1-0-into-your-companys-digital-brand/), 
 	[Sustainable.dev](https://the-sustainable.dev/w3c-introduces-the-first-draft-of-the-web-sustainability-guidelines/), 
@@ -397,7 +404,7 @@ Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://loww
 	[Vived](https://vived.io/is-there-a-greenest-jvm-spoiler-as-usual-it-depends-jvm-weekly-vol-170/), 
 	[Vivian Voss](https://vivianvoss.net/blog/why-we-render-everything-in-the-browser)
 - **W:**
-	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [4](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/)], 
+	W3C [[1](https://www.w3.org/blog/2023/introducing-web-sustainability-guidelines/), [2](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/), [3](https://www.w3.org/blog/2024/sustainable-web-interest-group-is-formed/), [4](https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/), [5](https://www.w3.org/news/2026/group-note-draft-web-sustainability-guidelines-wsg-impact-ratings/), [6](https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/)], 
 	[Waveland Web](https://wavelandweb.com/blog/normalizing-web-sustainability/), 
 	[We Made This](https://wemadethis.co.uk/blog/2024/01/sustainable-graphic-design/), 
 	[Web Performance Calendar](https://calendar.perfplanet.com/2023/why-web-perf-tools-should-be-reporting-website-carbon-emissions/), 

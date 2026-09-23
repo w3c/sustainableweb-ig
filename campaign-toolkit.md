@@ -144,7 +144,7 @@ Studio 24 [[1](https://www.studio24.net/services/sustainability/), [2](https://w
 [Team Neusta](https://deployed-blog.de/nachhaltiges-ux-design-wie-wir-digitale-produkte-verantwortungsvoll-gestalten/), 
 Team UX [[1](https://www.team-ux.com/demarche-eco-conception/), [2](https://lowwwcarbon.com/case-study/team-ux/)], 
 [Torchbox](https://torchbox.com/news/building-sustainable-websites/), 
-[TSMG](https://esg.tsmc.com/en-US/articles/299), 
+[TSMC](https://esg.tsmc.com/en-US/articles/299), 
 [Ufmedia](https://ufmedia.co.uk/about/sustainability/), 
 [Ulrike Uhlig](https://curlybracket.net/about.html), 
 [Umbraco](https://umbraco.com/blog/introducing-the-umbraco-sustainability-agent-profile/), 

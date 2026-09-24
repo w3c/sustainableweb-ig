@@ -5,7 +5,7 @@
 
 ## Implementations
 
-- [Carbonless](https://carbonless.cc/methodology) - Sustainability scanner, which integrates WSG into it's recommendations.
+- [Carbonless](https://carbonless.cc/methodology) - Sustainability scanner, which integrates WSG into its recommendations.
 - [Digital Sustainability Policy Guide](https://websitesustainability.com/policy/) - Web sustainability laws, standards, and guidelines.
 - [Ecograder](https://ecograder.com/) - Mightybytes implements WSG recommendations within their scanner.
 - [Ecolens](https://www.stefanvanbrummelen.nl/digital-sustainability-benchmark-tool) - Benchmark and improve a projects sustainability (mentions WSG).

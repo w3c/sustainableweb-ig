@@ -1914,7 +1914,7 @@
 							]
 						},
 						{
-							"title": "Avoid non-standard code",
+							"title": "Non-standard code",
 							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal.",
 							"resources": [
 								{

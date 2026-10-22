@@ -82,12 +82,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Group Note Draft</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://www.w3.org/TR/wsg-ir/">WSG Impact Ratings</a></td>
 			<td>W3C Group Note Draft</td>
-			<td>11 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -105,52 +105,52 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/resources.html">WSG Resources</a></td>
 			<td>W3C Editors Draft</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/benefits.html">WSG Benefits</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/quickref.html">WSG Quick Reference</a></td>
 			<td>W3C Editors Draft</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-impact/impact.json">WSG Impact JSON API</a></td>
 			<td>JSON API</td>
-			<td>03 Jul 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-ig/docs/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-ig/tree/main/docs/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>04 Aug 2026</td>
+			<td>16 Oct 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -159,7 +159,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 
 Digital Sustainability is an evolving field that is complex and undergoing significant change due to technological advances such as Artificial Intelligence and legislative shifts. The complexity of these rapid changes increases the need and urgency to provide guidance for those expected to meet climate-related goals and targets.
 
-The mission of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is to improve digital sustainability so that the Web works better for all people and the planet.
+The mission of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is to improve digital sustainability so that the Web works better for all people and the planet. Web sustainability is also a core part of the [W3C's mission as well](https://www.w3.org/mission/sustainability/).
 
 We do this through advancing the development of the [Web Sustainability Guidelines (WSG)](https://www.w3.org/TR/web-sustainability-guidelines/), its supplementary materials, and advocacy work (in digital sustainability) to educate and advise on any implementations of our work and its importance in the context of their organizations.
 
